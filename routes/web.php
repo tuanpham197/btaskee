@@ -28,3 +28,19 @@ Route::get('/info', function () {
 Route::get('/contact', function () {
     return view('customers.contact');
 });
+
+Route::get('/service-one', function () {
+    return view('customers.service_one');
+});
+
+Route::get('/service-two', function () {
+    return view('customers.service_two');
+});
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
