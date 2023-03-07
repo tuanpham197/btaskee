@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+
     <link rel="stylesheet" type="text/css"
         href="//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/mk2h9j41/23in7.css" media="all" />
     <link rel='stylesheet' id='elementor-post-15096-css'
@@ -26,7 +26,11 @@
         media='all' />
     <link rel="stylesheet" type="text/css"
         href="//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/qm5ywi1w/23in6.css" media="all" />
-   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 
 <body
@@ -222,172 +226,7 @@
                                         data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}"
                                         data-widget_type="nav-menu.default">
                                         <div class="elementor-widget-container">
-                                            <nav migration_allowed="1" migrated="0" role="navigation"
-                                                class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-                                                <ul id="menu-1-1131842" class="elementor-nav-menu">
-                                                    <li
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30780">
-                                                        <a class="elementor-item">Về bTaskee</a>
-                                                        <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30781">
-                                                                <a href="https://www.btaskee.com/gioi-thieu/"
-                                                                    class="elementor-sub-item">Giới thiệu</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44882">
-                                                                <a href="https://www.btaskee.com/thong-cao-bao-chi/"
-                                                                    class="elementor-sub-item">Thông cáo báo chí</a>
-                                                            </li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30782">
-                                                                <a href="https://www.btaskee.com/lien-he/"
-                                                                    class="elementor-sub-item">Liên hệ</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-30783">
-                                                        <a class="elementor-item">Dịch vụ</a>
-                                                        <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30784">
-                                                                <a href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
-                                                                    class="elementor-sub-item">Giúp việc nhà theo
-                                                                    giờ<sup class="tet_service">Hot</sup></a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9787 current_page_item menu-item-30791">
-                                                                <a href="https://www.btaskee.com/tong-ve-sinh/"
-                                                                    aria-current="page"
-                                                                    class="elementor-sub-item elementor-item-active">Tổng
-                                                                    vệ sinh<sup class="tet_service">Hot</sup></a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30793">
-                                                                <a href="https://www.btaskee.com/ve-sinh-sofa-rem-nem/"
-                                                                    class="elementor-sub-item">Vệ sinh sofa, rèm,
-                                                                    nệm<sup class="tet_service">Hot</sup></a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59488">
-                                                                <a href="https://www.btaskee.com/trong-tre-tai-nha-theo-gio/"
-                                                                    class="elementor-sub-item">Trông trẻ tại nhà<sup
-                                                                        class="new_service">NEW</sup></a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30792">
-                                                                <a href="https://www.btaskee.com/ve-sinh-may-lanh/"
-                                                                    class="elementor-sub-item">Vệ sinh máy lạnh</a>
-                                                            </li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39372">
-                                                                <a href="https://www.btaskee.com/cham-soc-nguoi-benh/"
-                                                                    class="elementor-sub-item">Chăm sóc người bệnh</a>
-                                                            </li>
-                                                            <li
-                                                                class="new_service menu-item menu-item-type-post_type menu-item-object-page menu-item-39373">
-                                                                <a href="https://www.btaskee.com/cham-soc-nguoi-cao-tuoi/"
-                                                                    class="elementor-sub-item">Chăm sóc người cao
-                                                                    tuổi</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30786">
-                                                                <a href="https://www.btaskee.com/di-cho/"
-                                                                    class="elementor-sub-item">Đi chợ</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30789">
-                                                                <a href="https://www.btaskee.com/nau-an-gia-dinh/"
-                                                                    class="elementor-sub-item">Nấu ăn gia đình</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30787">
-                                                                <a href="https://www.btaskee.com/giat-ui/"
-                                                                    class="elementor-sub-item">Giặt ủi</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30785">
-                                                                <a href="https://www.btaskee.com/don-dep-buong-phong/"
-                                                                    class="elementor-sub-item">Dọn dẹp buồng phòng</a>
-                                                            </li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30790">
-                                                                <a href="https://www.btaskee.com/khu-khuan/"
-                                                                    class="elementor-sub-item">Phun khử khuẩn</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30795">
-                                                                <a href="https://www.btaskee.com/btaskee-cho-doanh-nghiep/"
-                                                                    class="elementor-sub-item">bTaskee cho doanh
-                                                                    nghiệp</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30797">
-                                                        <a href="https://www.btaskee.com/brewards/"
-                                                            class="elementor-item">bRewards</a></li>
-                                                    <li
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048">
-                                                        <a href="https://www.btaskee.com/thanh-toan-bpay/"
-                                                            class="elementor-item">bPay</a></li>
-                                                    <li
-                                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30798">
-                                                        <a href="https://www.btaskee.com/kinh-nghiem-hay/"
-                                                            class="elementor-item">Kinh nghiệm hay</a></li>
-                                                    <li
-                                                        class="register_partner menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30803">
-                                                        <a class="elementor-item">Trở thành đối tác</a>
-                                                        <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30809">
-                                                                <a href="https://www.btaskee.com/dang-ky-giup-viec-nha-theo-gio/"
-                                                                    class="elementor-sub-item">Cộng tác viên giúp
-                                                                    việc</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30810">
-                                                                <a href="https://www.btaskee.com/dang-ky-nau-an/"
-                                                                    class="elementor-sub-item">Cộng tác viên nấu ăn</a>
-                                                            </li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30807">
-                                                                <a href="https://www.btaskee.com/dang-ky-don-dep-buong-phong/"
-                                                                    class="elementor-sub-item">Đối tác dọn dẹp buồng
-                                                                    phòng</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30811">
-                                                                <a href="https://www.btaskee.com/dang-ky-ve-sinh-may-lanh/"
-                                                                    class="elementor-sub-item">Đối tác vệ sinh máy
-                                                                    lạnh</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30808">
-                                                                <a href="https://www.btaskee.com/dang-ky-giat-ui/"
-                                                                    class="elementor-sub-item">Đối tác giặt ủi</a></li>
-                                                            <li
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30812">
-                                                                <a href="https://www.btaskee.com/doi-tac-doanh-nghiep/"
-                                                                    class="elementor-sub-item">Đối tác doanh nghiệp</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31651">
-                                                        <a href="#pll_switcher"
-                                                            class="elementor-item elementor-item-anchor">Tiếng Việt</a>
-                                                        <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li
-                                                                class="lang-item lang-item-15 lang-item-en lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-31651-en">
-                                                                <a href="https://www.btaskee.com/en/deep-cleaning/"
-                                                                    hreflang="en-US" lang="en-US"
-                                                                    class="elementor-sub-item">English</a></li>
-                                                            <li
-                                                                class="lang-item lang-item-2330 lang-item-th menu-item menu-item-type-custom menu-item-object-custom menu-item-31651-th">
-                                                                <a href="https://www.btaskee.com/th/deep-cleaning-thailand/"
-                                                                    hreflang="th" lang="th"
-                                                                    class="elementor-sub-item">ไทย</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li
-                                                        class="country country-vietnam menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31667">
-                                                        <a class="elementor-item">Việt Nam</a>
-                                                        <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li
-                                                                class="country-thailand menu-item menu-item-type-custom menu-item-object-custom menu-item-31668">
-                                                                <a href="https://www.btaskee.com/th/"
-                                                                    class="elementor-sub-item">Thailand</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </nav>
+                                            @include('menu')
                                             <div class="elementor-menu-toggle" role="button" tabindex="0"
                                                 aria-label="Menu Toggle" aria-expanded="false"> <i aria-hidden="true"
                                                     role="presentation"
@@ -406,17 +245,20 @@
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30781">
                                                                 <a href="https://www.btaskee.com/gioi-thieu/"
                                                                     class="elementor-sub-item" tabindex="-1">Giới
-                                                                    thiệu</a></li>
+                                                                    thiệu</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-44882">
                                                                 <a href="https://www.btaskee.com/thong-cao-bao-chi/"
                                                                     class="elementor-sub-item" tabindex="-1">Thông
-                                                                    cáo báo chí</a></li>
+                                                                    cáo báo chí</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30782">
                                                                 <a href="https://www.btaskee.com/lien-he/"
                                                                     class="elementor-sub-item" tabindex="-1">Liên
-                                                                    hệ</a></li>
+                                                                    hệ</a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li
@@ -428,20 +270,23 @@
                                                                 <a href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
                                                                     class="elementor-sub-item" tabindex="-1">Giúp
                                                                     việc nhà theo giờ<sup
-                                                                        class="tet_service">Hot</sup></a></li>
+                                                                        class="tet_service">Hot</sup></a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-9787 current_page_item menu-item-30791">
                                                                 <a href="https://www.btaskee.com/tong-ve-sinh/"
                                                                     aria-current="page"
                                                                     class="elementor-sub-item elementor-item-active"
                                                                     tabindex="-1">Tổng vệ sinh<sup
-                                                                        class="tet_service">Hot</sup></a></li>
+                                                                        class="tet_service">Hot</sup></a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30793">
                                                                 <a href="https://www.btaskee.com/ve-sinh-sofa-rem-nem/"
                                                                     class="elementor-sub-item" tabindex="-1">Vệ sinh
                                                                     sofa, rèm, nệm<sup
-                                                                        class="tet_service">Hot</sup></a></li>
+                                                                        class="tet_service">Hot</sup></a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59488">
                                                                 <a href="https://www.btaskee.com/trong-tre-tai-nha-theo-gio/"
@@ -452,57 +297,68 @@
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30792">
                                                                 <a href="https://www.btaskee.com/ve-sinh-may-lanh/"
                                                                     class="elementor-sub-item" tabindex="-1">Vệ sinh
-                                                                    máy lạnh</a></li>
+                                                                    máy lạnh</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39372">
                                                                 <a href="https://www.btaskee.com/cham-soc-nguoi-benh/"
                                                                     class="elementor-sub-item" tabindex="-1">Chăm sóc
-                                                                    người bệnh</a></li>
+                                                                    người bệnh</a>
+                                                            </li>
                                                             <li
                                                                 class="new_service menu-item menu-item-type-post_type menu-item-object-page menu-item-39373">
                                                                 <a href="https://www.btaskee.com/cham-soc-nguoi-cao-tuoi/"
                                                                     class="elementor-sub-item" tabindex="-1">Chăm sóc
-                                                                    người cao tuổi</a></li>
+                                                                    người cao tuổi</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30786">
                                                                 <a href="https://www.btaskee.com/di-cho/"
                                                                     class="elementor-sub-item" tabindex="-1">Đi
-                                                                    chợ</a></li>
+                                                                    chợ</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30789">
                                                                 <a href="https://www.btaskee.com/nau-an-gia-dinh/"
                                                                     class="elementor-sub-item" tabindex="-1">Nấu ăn
-                                                                    gia đình</a></li>
+                                                                    gia đình</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30787">
                                                                 <a href="https://www.btaskee.com/giat-ui/"
                                                                     class="elementor-sub-item" tabindex="-1">Giặt
-                                                                    ủi</a></li>
+                                                                    ủi</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30785">
                                                                 <a href="https://www.btaskee.com/don-dep-buong-phong/"
                                                                     class="elementor-sub-item" tabindex="-1">Dọn dẹp
-                                                                    buồng phòng</a></li>
+                                                                    buồng phòng</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30790">
                                                                 <a href="https://www.btaskee.com/khu-khuan/"
                                                                     class="elementor-sub-item" tabindex="-1">Phun khử
-                                                                    khuẩn</a></li>
+                                                                    khuẩn</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30795">
                                                                 <a href="https://www.btaskee.com/btaskee-cho-doanh-nghiep/"
                                                                     class="elementor-sub-item" tabindex="-1">bTaskee
-                                                                    cho doanh nghiệp</a></li>
+                                                                    cho doanh nghiệp</a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30797">
                                                         <a href="https://www.btaskee.com/brewards/"
-                                                            class="elementor-item" tabindex="-1">bRewards</a></li>
+                                                            class="elementor-item" tabindex="-1">bRewards</a>
+                                                    </li>
                                                     <li
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048">
                                                         <a href="https://www.btaskee.com/thanh-toan-bpay/"
-                                                            class="elementor-item" tabindex="-1">bPay</a></li>
+                                                            class="elementor-item" tabindex="-1">bPay</a>
+                                                    </li>
                                                     <li
                                                         class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-30798">
                                                         <a href="https://www.btaskee.com/kinh-nghiem-hay/"
@@ -516,32 +372,38 @@
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30809">
                                                                 <a href="https://www.btaskee.com/dang-ky-giup-viec-nha-theo-gio/"
                                                                     class="elementor-sub-item" tabindex="-1">Cộng tác
-                                                                    viên giúp việc</a></li>
+                                                                    viên giúp việc</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30810">
                                                                 <a href="https://www.btaskee.com/dang-ky-nau-an/"
                                                                     class="elementor-sub-item" tabindex="-1">Cộng tác
-                                                                    viên nấu ăn</a></li>
+                                                                    viên nấu ăn</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30807">
                                                                 <a href="https://www.btaskee.com/dang-ky-don-dep-buong-phong/"
                                                                     class="elementor-sub-item" tabindex="-1">Đối tác
-                                                                    dọn dẹp buồng phòng</a></li>
+                                                                    dọn dẹp buồng phòng</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30811">
                                                                 <a href="https://www.btaskee.com/dang-ky-ve-sinh-may-lanh/"
                                                                     class="elementor-sub-item" tabindex="-1">Đối tác
-                                                                    vệ sinh máy lạnh</a></li>
+                                                                    vệ sinh máy lạnh</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30808">
                                                                 <a href="https://www.btaskee.com/dang-ky-giat-ui/"
                                                                     class="elementor-sub-item" tabindex="-1">Đối tác
-                                                                    giặt ủi</a></li>
+                                                                    giặt ủi</a>
+                                                            </li>
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30812">
                                                                 <a href="https://www.btaskee.com/doi-tac-doanh-nghiep/"
                                                                     class="elementor-sub-item" tabindex="-1">Đối tác
-                                                                    doanh nghiệp</a></li>
+                                                                    doanh nghiệp</a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li
@@ -555,7 +417,8 @@
                                                                 <a href="https://www.btaskee.com/en/deep-cleaning/"
                                                                     hreflang="en-US" lang="en-US"
                                                                     class="elementor-sub-item"
-                                                                    tabindex="-1">English</a></li>
+                                                                    tabindex="-1">English</a>
+                                                            </li>
                                                             <li
                                                                 class="lang-item lang-item-2330 lang-item-th menu-item menu-item-type-custom menu-item-object-custom menu-item-31651-th">
                                                                 <a href="https://www.btaskee.com/th/deep-cleaning-thailand/"
@@ -572,7 +435,8 @@
                                                                 class="country-thailand menu-item menu-item-type-custom menu-item-object-custom menu-item-31668">
                                                                 <a href="https://www.btaskee.com/th/"
                                                                     class="elementor-sub-item"
-                                                                    tabindex="-1">Thailand</a></li>
+                                                                    tabindex="-1">Thailand</a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -1274,13 +1138,11 @@
                                                                                 <img width="334" height="334"
                                                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20334%20334'%3E%3C/svg%3E"
                                                                                     class="attachment-full size-full"
-                                                                                    alt="badge-service"
-                                                                                    loading="lazy"
+                                                                                    alt="badge-service" loading="lazy"
                                                                                     data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-service.png"
                                                                                     pagespeed_url_hash="1485774797"
                                                                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /><noscript><img
-                                                                                        width="334"
-                                                                                        height="334"
+                                                                                        width="334" height="334"
                                                                                         src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-service.png"
                                                                                         class="attachment-full size-full"
                                                                                         alt="badge-service"
@@ -1307,8 +1169,7 @@
                                                     </div>
                                                     <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e4c2402"
                                                         data-id="e4c2402" data-element_type="column">
-                                                        <div
-                                                            class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-91552fc elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box"
                                                                     data-id="91552fc" data-element_type="widget"
@@ -1324,8 +1185,7 @@
                                                                                     data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-hourglass.png"
                                                                                     pagespeed_url_hash="1485774797"
                                                                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /><noscript><img
-                                                                                        width="334"
-                                                                                        height="334"
+                                                                                        width="334" height="334"
                                                                                         src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-hourglass.png"
                                                                                         class="attachment-full size-full"
                                                                                         alt="badge-hourglass"
@@ -1352,8 +1212,7 @@
                                                     </div>
                                                     <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4d58ce7"
                                                         data-id="4d58ce7" data-element_type="column">
-                                                        <div
-                                                            class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-1133dd9 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box"
                                                                     data-id="1133dd9" data-element_type="widget"
@@ -1368,8 +1227,7 @@
                                                                                     data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-wash.png"
                                                                                     pagespeed_url_hash="1005930846"
                                                                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /><noscript><img
-                                                                                        width="335"
-                                                                                        height="334"
+                                                                                        width="335" height="334"
                                                                                         src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-wash.png"
                                                                                         class="attachment-full size-full"
                                                                                         alt="badge-wash"
@@ -1849,7 +1707,8 @@
                                                                                         class="fas fa-exclamation-circle"></i>
                                                                                 </span> <span
                                                                                     class="elementor-icon-list-text">Lưu
-                                                                                    ý</span> </li>
+                                                                                    ý</span>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -2954,7 +2813,8 @@
                                                                                 <span
                                                                                     class="elementor-screen-only">Twitter</span>
                                                                                 <i class="fab fa-twitter"></i> </a>
-                                                                        </span></div>
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3043,7 +2903,8 @@
                                                     <span
                                                         class="elementor-headline-dynamic-text elementor-headline-text-active">
                                                         Vietnam </span> <span class="elementor-headline-dynamic-text">
-                                                        Thailand </span> </span> </h3>
+                                                        Thailand </span> </span>
+                                            </h3>
                                         </div>
                                     </div>
                                     <div class="elementor-element elementor-element-7b7a0b6 elementor-tabs-view-vertical location-office elementor-widget elementor-widget-tabs"
@@ -3327,7 +3188,7 @@
             type='text/css' media='all' />
     </noscript>
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/d4w5xqbh/23in7.js'></script>
-    
+
     <script id='elementor-pro-frontend-js-before'>
         var ElementorProFrontendConfig = {
             "ajaxurl": "https:\/\/www.btaskee.com\/wp-admin\/admin-ajax.php",
@@ -3528,7 +3389,7 @@
     </script>
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/ft7kq4sl/23in7.js'></script>
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/7zo6nzq5/23in7.js'></script>
-    
+
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/7kgvbi0y/23in7.js'></script>
     <script src='https://www.btaskee.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.6.5'
         id='elementor-frontend-js'></script>
@@ -3604,4 +3465,5 @@
         }, false);
     </script>
     <script defer src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/9a3f054u/23in7.js'></script>
+
 </html>

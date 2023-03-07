@@ -44,3 +44,11 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 })->name('register');
+
+Route::get('/reward', function () {
+    return view('customers.reward');
+});
+
+Route::get('/booking', function () {
+    return view('customers.booking');
+});

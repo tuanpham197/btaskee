@@ -1,5 +1,7 @@
 @extends('master')
-
+@section('header-css')
+<link rel='stylesheet' id='elementor-post-33182-css' href="{{asset('css/about.css')}}" type='text/css' media='all' />
+@endsection
 @section('main-content')
 <div data-elementor-type="wp-post" data-elementor-id="474" class="elementor elementor-474">
     <div class="elementor-inner">
@@ -101,15 +103,9 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="600"
                                                         height="400"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/12/about-y-nghia-cua-btaskee-ver3-vie.png"
                                                         class="attachment-full size-full"
-                                                        alt="about-y-nghia-cua-btaskee-ver3-vie" loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/12/about-y-nghia-cua-btaskee-ver3-vie.png" /><noscript><img
-                                                            width="600" height="400"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/12/about-y-nghia-cua-btaskee-ver3-vie.png"
-                                                            class="attachment-full size-full"
-                                                            alt="about-y-nghia-cua-btaskee-ver3-vie"
-                                                            loading="lazy" /></noscript></figure>
+                                                        alt="about-y-nghia-cua-btaskee-ver3-vie"></figure>
                                                 <div class="elementor-image-box-content">
                                                     <h3 class="elementor-image-box-title">Ý nghĩa của bTaskee</h3>
                                                     <p class="elementor-image-box-description">Tên gọi bTaskee lấy
@@ -132,15 +128,9 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="600"
                                                         height="400"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/about-khu-vuc-btaskee-hoat-dong.png"
                                                         class="attachment-full size-full"
-                                                        alt="about-khu-vuc-btaskee-hoat-dong" loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/about-khu-vuc-btaskee-hoat-dong.png" /><noscript><img
-                                                            width="600" height="400"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/11/about-khu-vuc-btaskee-hoat-dong.png"
-                                                            class="attachment-full size-full"
-                                                            alt="about-khu-vuc-btaskee-hoat-dong"
-                                                            loading="lazy" /></noscript></figure>
+                                                        alt="about-khu-vuc-btaskee-hoat-dong" ></figure>
                                                 <div class="elementor-image-box-content">
                                                     <h3 class="elementor-image-box-title">Khu vực hoạt động</h3>
                                                     <p class="elementor-image-box-description">Hiện tại, bTaskee
@@ -163,15 +153,9 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="600"
                                                         height="400"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/about-gioi-thieu-ve-btaskee-ver-25.png"
                                                         class="attachment-full size-full"
-                                                        alt="about-gioi-thieu-ve-btaskee-ver-25" loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/about-gioi-thieu-ve-btaskee-ver-25.png" /><noscript><img
-                                                            width="600" height="400"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/11/about-gioi-thieu-ve-btaskee-ver-25.png"
-                                                            class="attachment-full size-full"
-                                                            alt="about-gioi-thieu-ve-btaskee-ver-25"
-                                                            loading="lazy" /></noscript></figure>
+                                                        alt="about-gioi-thieu-ve-btaskee-ver-25"></figure>
                                                 <div class="elementor-image-box-content">
                                                     <h3 class="elementor-image-box-title">Phát triển nhiều hơn nữa
                                                     </h3>
@@ -205,18 +189,9 @@
                                         data-widget_type="image.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-image"> <img width="2400" height="600"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202400%20600'%3E%3C/svg%3E"
+                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh.jpg"
                                                     class="attachment-full size-full"
-                                                    alt="core-value-banner-tam-nhin-su-menh" loading="lazy"
-                                                    data-lazy-srcset="https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh.jpg 2400w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-300x75.jpg 300w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-1024x256.jpg 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-768x192.jpg 768w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-1536x384.jpg 1536w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-2048x512.jpg 2048w"
-                                                    data-lazy-sizes="(max-width: 2400px) 100vw, 2400px"
-                                                    data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh.jpg" /><noscript><img
-                                                        width="2400" height="600"
-                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh.jpg"
-                                                        class="attachment-full size-full"
-                                                        alt="core-value-banner-tam-nhin-su-menh" loading="lazy"
-                                                        srcset="https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh.jpg 2400w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-300x75.jpg 300w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-1024x256.jpg 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-768x192.jpg 768w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-1536x384.jpg 1536w, https://www.btaskee.com/wp-content/uploads/2020/11/core-value-banner-tam-nhin-su-menh-2048x512.jpg 2048w"
-                                                        sizes="(max-width: 2400px) 100vw, 2400px" /></noscript>
+                                                    alt="core-value-banner-tam-nhin-su-menh" ></noscript>
                                             </div>
                                         </div>
                                     </div>
@@ -242,14 +217,9 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="400"
                                                         height="400"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/tam-nhin-cua-btaskee.png"
                                                         class="attachment-full size-full" alt="tam-nhin-cua-btaskee"
-                                                        loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/tam-nhin-cua-btaskee.png" /><noscript><img
-                                                            width="400" height="400"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/11/tam-nhin-cua-btaskee.png"
-                                                            class="attachment-full size-full"
-                                                            alt="tam-nhin-cua-btaskee" loading="lazy" /></noscript>
+                                                        >
                                                 </figure>
                                                 <div class="elementor-image-box-content">
                                                     <h2 class="elementor-image-box-title">Tầm nhìn</h2>
@@ -285,14 +255,9 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="400"
                                                         height="400"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/su-menh-cua-btaskee.png"
                                                         class="attachment-full size-full" alt="su-menh-cua-btaskee"
-                                                        loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/su-menh-cua-btaskee.png" /><noscript><img
-                                                            width="400" height="400"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/11/su-menh-cua-btaskee.png"
-                                                            class="attachment-full size-full"
-                                                            alt="su-menh-cua-btaskee" loading="lazy" /></noscript>
+                                                       >
                                                 </figure>
                                                 <div class="elementor-image-box-content">
                                                     <h2 class="elementor-image-box-title">Sứ mệnh</h2>
@@ -343,18 +308,9 @@
                                         data-widget_type="image.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-image"> <img width="1200" height="300"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20300'%3E%3C/svg%3E"
+                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee.png"
                                                     class="attachment-full size-full"
-                                                    alt="gia-tri-cot-loi-cua-btaskee" loading="lazy"
-                                                    data-lazy-srcset="https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee.png 1200w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-300x75.png 300w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-1024x256.png 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-768x192.png 768w"
-                                                    data-lazy-sizes="(max-width: 1200px) 100vw, 1200px"
-                                                    data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee.png" /><noscript><img
-                                                        width="1200" height="300"
-                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee.png"
-                                                        class="attachment-full size-full"
-                                                        alt="gia-tri-cot-loi-cua-btaskee" loading="lazy"
-                                                        srcset="https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee.png 1200w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-300x75.png 300w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-1024x256.png 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/gia-tri-cot-loi-cua-btaskee-768x192.png 768w"
-                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></noscript>
+                                                    alt="gia-tri-cot-loi-cua-btaskee">
                                             </div>
                                         </div>
                                     </div>
@@ -374,15 +330,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-quality.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-quality" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-quality.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-quality.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-quality"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-quality">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -412,15 +362,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-favorite.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-favorite" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-favorite.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-favorite.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-favorite"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-favorite">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -448,15 +392,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-fast.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-fast" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-fast.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-fast.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-fast"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-fast">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -485,15 +423,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-growth.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-growth" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-growth.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-growth.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-growth"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-growth">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -555,16 +487,10 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="300" height="300"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-zalo-pay.png"
                                                                                 class="attachment-full size-full"
                                                                                 alt="logo-doi-tac-zalo-pay"
-                                                                                loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-zalo-pay.png" /><noscript><img
-                                                                                    width="300" height="300"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-zalo-pay.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="logo-doi-tac-zalo-pay"
-                                                                                    loading="lazy" /></noscript>
+                                                                                >
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -591,16 +517,10 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="300" height="300"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-momo.png"
                                                                                 class="attachment-full size-full"
                                                                                 alt="logo-doi-tac-momo"
-                                                                                loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-momo.png" /><noscript><img
-                                                                                    width="300" height="300"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-momo.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="logo-doi-tac-momo"
-                                                                                    loading="lazy" /></noscript>
+                                                                                >
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -627,16 +547,10 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="300" height="300"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-hoozing.png"
                                                                                 class="attachment-full size-full"
                                                                                 alt="logo-doi-tac-hoozing"
-                                                                                loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-hoozing.png" /><noscript><img
-                                                                                    width="300" height="300"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/logo-doi-tac-hoozing.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="logo-doi-tac-hoozing"
-                                                                                    loading="lazy" /></noscript>
+                                                                                >
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -682,18 +596,9 @@
                                         data-widget_type="image.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-image"> <img width="1200" height="651"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20651'%3E%3C/svg%3E"
+                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc.png"
                                                     class="attachment-full size-full"
-                                                    alt="cap-nhat-thong-tin-lien-tuc" loading="lazy"
-                                                    data-lazy-srcset="https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc.png 1200w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-300x163.png 300w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-1024x556.png 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-768x417.png 768w"
-                                                    data-lazy-sizes="(max-width: 1200px) 100vw, 1200px"
-                                                    data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc.png" /><noscript><img
-                                                        width="1200" height="651"
-                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc.png"
-                                                        class="attachment-full size-full"
-                                                        alt="cap-nhat-thong-tin-lien-tuc" loading="lazy"
-                                                        srcset="https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc.png 1200w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-300x163.png 300w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-1024x556.png 1024w, https://www.btaskee.com/wp-content/uploads/2020/11/cap-nhat-thong-tin-lien-tuc-768x417.png 768w"
-                                                        sizes="(max-width: 1200px) 100vw, 1200px" /></noscript>
+                                                    alt="cap-nhat-thong-tin-lien-tuc">
                                             </div>
                                         </div>
                                     </div>
@@ -713,15 +618,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-eadit.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-eadit" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-eadit.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-eadit.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-eadit"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-eadit">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -755,15 +654,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-business.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-business" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-business.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-business.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-business"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-business">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -796,15 +689,9 @@
                                                                     <div class="elementor-image-box-wrapper">
                                                                         <figure class="elementor-image-box-img"><img
                                                                                 width="101" height="101"
-                                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20101%20101'%3E%3C/svg%3E"
+                                                                                src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-voucher.png"
                                                                                 class="attachment-full size-full"
-                                                                                alt="icon-voucher" loading="lazy"
-                                                                                data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-voucher.png" /><noscript><img
-                                                                                    width="101" height="101"
-                                                                                    src="https://www.btaskee.com/wp-content/uploads/2020/10/icon-voucher.png"
-                                                                                    class="attachment-full size-full"
-                                                                                    alt="icon-voucher"
-                                                                                    loading="lazy" /></noscript>
+                                                                                alt="icon-voucher">
                                                                         </figure>
                                                                         <div class="elementor-image-box-content">
                                                                             <h3 class="elementor-image-box-title">
@@ -849,18 +736,9 @@
                                         data-widget_type="image.default">
                                         <div class="elementor-widget-container">
                                             <div class="elementor-image"> <img width="600" height="400"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
+                                                    src="https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban.png"
                                                     class="attachment-full size-full"
-                                                    alt="btaskee-luon-san-sang-ho-tro-ban" loading="lazy"
-                                                    data-lazy-srcset="https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban.png 600w, https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban-300x200.png 300w"
-                                                    data-lazy-sizes="(max-width: 600px) 100vw, 600px"
-                                                    data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban.png" /><noscript><img
-                                                        width="600" height="400"
-                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban.png"
-                                                        class="attachment-full size-full"
-                                                        alt="btaskee-luon-san-sang-ho-tro-ban" loading="lazy"
-                                                        srcset="https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban.png 600w, https://www.btaskee.com/wp-content/uploads/2020/11/btaskee-luon-san-sang-ho-tro-ban-300x200.png 300w"
-                                                        sizes="(max-width: 600px) 100vw, 600px" /></noscript></div>
+                                                    alt="btaskee-luon-san-sang-ho-tro-ban"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -910,16 +788,10 @@
                                             <div class="elementor-image-box-wrapper">
                                                 <figure class="elementor-image-box-img"><img width="400"
                                                         height="267"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20267'%3E%3C/svg%3E"
+                                                        src="https://www.btaskee.com/wp-content/uploads/2020/11/tro-thanh-thanh-vien-cua-btaskee-tuyen-dung.png"
                                                         class="attachment-full size-full"
                                                         alt="tro-thanh-thanh-vien-cua-btaskee-tuyen-dung"
-                                                        loading="lazy"
-                                                        data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/11/tro-thanh-thanh-vien-cua-btaskee-tuyen-dung.png" /><noscript><img
-                                                            width="400" height="267"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2020/11/tro-thanh-thanh-vien-cua-btaskee-tuyen-dung.png"
-                                                            class="attachment-full size-full"
-                                                            alt="tro-thanh-thanh-vien-cua-btaskee-tuyen-dung"
-                                                            loading="lazy" /></noscript></figure>
+                                                       ></figure>
                                                 <div class="elementor-image-box-content">
                                                     <h2 class="elementor-image-box-title">Trở thành thành viên của
                                                         đại gia đình bTaskee ngay hôm nay!</h2>

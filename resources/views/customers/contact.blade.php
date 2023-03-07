@@ -1,5 +1,7 @@
 @extends('master')
-
+@section('header-css')
+<link rel='stylesheet' id='elementor-post-33182-css' href="{{asset('css/contact.css')}}" type='text/css' media='all' />
+@endsection
 @section('main-content')
 <div data-elementor-type="wp-post" data-elementor-id="643" class="elementor elementor-643">
     <div class="elementor-inner">
