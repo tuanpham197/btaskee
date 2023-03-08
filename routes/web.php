@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AddressController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
+
+Route::post('login', [UserController::class, 'login']);
+Route::get('logout', [UserController::class, 'logout']);
+Route::post('register', [UserController::class, 'register']);
+
+//
+Route::group([
+    'middleware' => 'auth'
+], function() {
+    Route::get('address/province', [AddressController::class, 'getProvinces']);
+    Route::get('address/disctrict/{id}', [AddressController::class, 'getDisctricts']);
+    Route::get('address/ward/{id}', [AddressController::class, 'getWards']);
+});
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('customers.home');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('customers.about');
@@ -37,13 +67,7 @@ Route::get('/service-two', function () {
     return view('customers.service_two');
 });
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
-Route::get('/register', function () {
-    return view('register');
-})->name('register');
 
 Route::get('/reward', function () {
     return view('customers.reward');

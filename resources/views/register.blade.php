@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <style>
         body {
             background: #007bff;
@@ -52,22 +52,37 @@
                 <div class="card border-0 shadow rounded-3 my-5">
                     <div class="card-body p-4 p-sm-5">
                         <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
-                        <form>
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form method="POST" action="register">
+                            @csrf
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="username"
+                                    name="username">
+                                <label for="floatingInput">Username</label>
+                            </div>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com">
+                                    placeholder="name@example.com" name="email">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword"
-                                    placeholder="Password">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    name="password">
                                 <label for="floatingPassword">Password</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="confirm_password" class="form-control" id="confirm_password"
-                                    placeholder="Password">
-                                <label for="confirm_password">Confirm password</label>
+                                <input type="password" class="form-control" id="confirm_password" placeholder="Password"
+                                    name="password_confirmation">
+                                <label for="password_confirmation">Confirm password</label>
                             </div>
                             <div class="d-grid">
                                 <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
@@ -75,10 +90,10 @@
                             </div>
                         </form>
                         <div class="d-grid">
-                            <a href="{{route('login')}}">
-                                <button class="btn btn-success btn-login text-uppercase fw-bold" type="submit" >
+                            <a href="{{ route('login') }}">
+                                <button class="btn btn-success btn-login text-uppercase fw-bold" type="submit">
                                     Sign in
-                               </button>
+                                </button>
                             </a>
                         </div>
                     </div>

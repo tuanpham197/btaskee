@@ -30,9 +30,18 @@
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30797">
             <a href="/reward" class="elementor-item">bRewards</a>
         </li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048">
-            <a href="/login" class="elementor-item">Login</a>
-        </li>
-
+        @auth
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;justify-content: center;">
+                <p class="elementor-item" style="margin:0">{{Auth::user()->username}}</p>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;">
+                <a href="/logout" class="elementor-item">Đăng xuất</a>
+            </li>
+        @endauth
+        @guest
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;">
+                <a href="/login" class="elementor-item">Đăng nhập</a>
+            </li>
+        @endguest
     </ul>
 </nav>
