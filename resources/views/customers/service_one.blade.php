@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-   
+
     <link rel="stylesheet" type="text/css"
         href="//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/mk2h9j41/23in7.css" media="all" />
     <link rel='stylesheet' id='elementor-post-15096-css'
@@ -1187,54 +1187,23 @@
                                                 <div class="elementor-swiper">
                                                     <div class="elementor-main-swiper swiper-container">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>Gói 2 giờ</h3>
-                                                                            <p>(2 phòng - 55 m<sup>2</sup>)</p> <br>
-                                                                            <hr>
+                                                            @foreach ($service->details as $item)
+                                                                <div class="swiper-slide">
+                                                                    <div class="elementor-testimonial">
+                                                                        <div class="elementor-testimonial__content">
+                                                                            <div class="elementor-testimonial__text">
+                                                                                <h3>Gói {{$item->hours}} giờ</h3>
+                                                                                <p>({{$item->room}} phòng - {{$item->area}} m<sup>2</sup>)</p> <br>
+                                                                                <hr>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-testimonial__footer"> <cite
+                                                                                class="elementor-testimonial__cite"><span
+                                                                                    class="elementor-testimonial__name">{{$item->price_format}}<sup>đ</sup></span></cite>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">132,000<sup>đ</sup>
-                                                                                - 168,000<sup>đ</sup></span></cite>
-                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>Gói 3 giờ</h3>
-                                                                            <p>(3 phòng - 85 m<sup>2</sup>)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">165,000<sup>đ</sup>
-                                                                                - 210,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>Gói 4 giờ</h3>
-                                                                            <p>(4 phòng - 105 m<sup>2</sup>)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">209,000<sup>đ</sup>
-                                                                                - 266,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            @endforeach
                                                         </div>
                                                         <div class="swiper-pagination"></div>
                                                     </div>
@@ -1882,16 +1851,7 @@
                                             data-id="14d2686" data-element_type="widget"
                                             data-widget_type="html.default">
                                             <div class="elementor-widget-container">
-                                                <script type="application/ld+json">{
-"@context":"https://schema.org",
-"@type":"Service",
-"provider":"bTaskee",
-"image":"https://www.btaskee.com/wp-content/uploads/2020/03/optimize-Home-Cleaning-giup-viec-nha-theo-gio-bTaskee.jpg",
-"additionalType": "https://en.wikipedia.org/wiki/Maid_service",
-"name": "Dịch vụ giúp việc nhà theo giờ",
-"termsOfService": "https://www.btaskee.com/dieu-khoan-su-dung/",
-"description": "Bạn có thể chăm sóc ngôi nhà của mình một cách hoàn hảo khi đặt lịch dọn dẹp nhà trên ứng dụng bTaskee - Nhanh chóng, Tiện lợi và Tiết kiệm chi phí. Nay đã có mặt tại Tp. Hồ Chí Minh, Hà Nội, Đà Nẵng, Hải Phòng, Nha Trang, Đà Lạt, Biên Hòa, Cần Thơ và Bình Dương. Trải nghiệm ứng dụng giúp việc nhà theo giờ và thảnh thơi tận hưởng những điều tốt đẹp nhất trong cuộc sống.",
-"url":"https://www.btaskee.com/giup-viec-nha-theo-gio/"}</script>
+
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-b2e9890 elementor-widget elementor-widget-shortcode"
@@ -2802,7 +2762,7 @@
         type='text/css' media='all' />
     <link rel="stylesheet" type="text/css"
         href="//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/1f6taevo/23in6.css" media="all" />
-   
+
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/d4w5xqbh/23in7.js'></script>
     <script>
         function showstep01() {
@@ -2861,7 +2821,7 @@
             }
         }
     </script>
-   
+
     <script id='elementor-pro-frontend-js-before'>
         var ElementorProFrontendConfig = {
             "ajaxurl": "https:\/\/www.btaskee.com\/wp-admin\/admin-ajax.php",
@@ -3060,8 +3020,8 @@
             }
         };
     </script>
-    
-    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         var jQuery_3_5_1 = $.noConflict(true);
@@ -3112,9 +3072,9 @@
             }
         });
     </script>
-   
-    
-   
+
+
+
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/7zo6nzq5/23in7.js'></script>
     <script id='wp-i18n-js-after'>
         wp.i18n.setLocaleData({
@@ -3141,8 +3101,8 @@
         src='https://www.btaskee.com/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.6.4'
         id='pro-preloaded-elements-handlers-js'></script>
     <script src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/qjlj6kcw/23in7.js'></script>
-    
-    
+
+
     <script>
         window.lazyLoadOptions = {
             elements_selector: "img[data-lazy-src],.rocket-lazyload",
@@ -3211,7 +3171,7 @@
         }, false);
     </script>
     <script defer src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/9a3f054u/23in7.js'></script>
-    
+
 </body>
 
 </html>

@@ -18,17 +18,18 @@
         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30783">
             <a class="elementor-item">Dịch vụ</a>
             <ul class="sub-menu elementor-nav-menu--dropdown">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30784">
-                    <a href="/service-one" class="elementor-sub-item">Giúp việc nhà theo
-                        giờ<sup class="tet_service">Hot</sup></a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30791">
-                    <a href="/service-two" class="elementor-sub-item">Tổng vệ sinh<sup class="tet_service">Hot</sup></a>
-                </li>
+                @foreach ($services as $item)
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30784">
+                        <a href="/services/{{$item->id}}" class="elementor-sub-item">{{$item->name}}<sup class="tet_service">Hot</sup></a>
+                    </li>
+                @endforeach
             </ul>
         </li>
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30797">
             <a href="/reward" class="elementor-item">bRewards</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30797">
+            <a href="/booking" class="elementor-item">Đặt dịch vụ</a>
         </li>
         @auth
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;justify-content: center;">

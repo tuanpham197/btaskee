@@ -15,7 +15,7 @@ class="elementor elementor-33182 elementor-location-header">
                                 data-id="d336270" data-element_type="widget" id="redirectLangHome"
                                 data-widget_type="image.default">
                                 <div class="elementor-widget-container">
-                                    <div class="elementor-image"> <a href="#"> <img width="154"
+                                    <div class="elementor-image"> <a href="{{route('home')}}"> <img width="154"
                                                 height="40"
                                                 src="https://www.btaskee.com/wp-content/uploads/2020/11/logo_btaskee_ver_3.png"
                                                 class="attachment-full size-full" alt="logo_btaskee_ver_3"
@@ -36,8 +36,6 @@ class="elementor elementor-33182 elementor-location-header">
                                 data-widget_type="nav-menu.default">
                                 <div class="elementor-widget-container">
                                    @include('menu')
-
-
                                     <div class="elementor-menu-toggle" role="button" tabindex="0"
                                         aria-label="Menu Toggle" aria-expanded="false"> <i aria-hidden="true"
                                             role="presentation"
@@ -89,7 +87,7 @@ class="elementor elementor-33182 elementor-location-header">
                                                             class="elementor-sub-item" tabindex="-1">Tổng vệ
                                                             sinh<sup class="tet_service">Hot</sup></a>
                                                     </li>
-                                                   
+
                                                     <li
                                                         class="new_service menu-item menu-item-type-post_type menu-item-object-page menu-item-39373">
                                                         <a href="https://www.btaskee.com/cham-soc-nguoi-cao-tuoi/"

@@ -18,4 +18,9 @@ class Service extends Model
     protected $cats = [
         'created_at'
     ];
+
+    public function details()
+    {
+        return $this->hasMany(ServiceDetail::class);
+    }
 }

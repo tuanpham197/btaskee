@@ -13,10 +13,19 @@ class ServiceDetail extends Model
         'name',
         'service_id',
         'price',
+        'area',
+        'people',
+        'hours',
+        'room',
         'created_at'
     ];
 
     protected $cats = [
         'created_at'
     ];
+
+    public function getPriceFormatAttribute()
+    {
+        return number_format($this->price, 0, ',', '.');
+    }
 }

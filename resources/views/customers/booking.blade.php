@@ -22,37 +22,31 @@
                     <div class="row pb-3">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Tỉnh thành </label>
-                            <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select id="provinces" class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                                <option value="">-- Chọn tỉnh thành --</option>
+                                @foreach ($provinces as $province)
+                                    <option value="{{ $province->id }}">{{ $province->name }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Quận huyện </label>
-                            <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select id="districts" class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                                <option value="">-- Chọn quận huyện --</option>
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Phường xã</label>
-                            <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select id="wards" class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                                <option value="">-- Chọn phường xã --</option>
                             </select>
                         </div>
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Số nhà / tên đường</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="Nhập địa chỉ chi tiết">
                         </div>
                     </div>
                     <div class="row pt-3">
@@ -62,30 +56,19 @@
                         <div class="row">
                             <div class="col">
                                 <label for="exampleFormControlInput1" class="form-label">Service</label>
-                                <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select id="services" class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+                                    <option selected>--- Chọn dịch vụ ----</option>
+                                    @foreach ($services as $service)
+                                        <option value="{{$service->id}}">{{$service->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label for="exampleFormControlInput1" class="form-label">Goi dich vu</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Default radio
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Default checked radio
-                                    </label>
+                                <div id="service_details">
+
                                 </div>
                             </div>
                         </div>
@@ -99,7 +82,46 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-
-
     </div>
+@endsection
+@section('footer-js')
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#provinces').change(function() {
+                var provinceId = $(this).val();
+                $.ajax({
+                    type: 'GET',
+                    url: '{{ route("ajax.districts", ":provinceId") }}'.replace(':provinceId', provinceId),
+                    success: function(data) {
+                        $('#districts').html(data);
+                    }
+                });
+            });
+
+            $('#districts').change(function() {
+                var districtId = $(this).val();
+                $.ajax({
+                    type: 'GET',
+                    url: '{{ route("ajax.wards", ":districtId") }}'.replace(':districtId', districtId),
+                    success: function(data) {
+                        $('#wards').html(data);
+                    }
+                });
+            });
+
+            $('#services').change(function() {
+                var serviceId = $(this).val();
+                $.ajax({
+                    type: 'GET',
+                    url: '{{ route("ajax.services", ":serviceId") }}'.replace(':serviceId', serviceId),
+                    success: function(data) {
+                        $('#service_details').html(data);
+                    }
+                });
+            });
+
+        });
+
+    </script>
 @endsection

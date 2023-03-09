@@ -1253,8 +1253,7 @@
                                                     </div>
                                                     <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8e83b9a"
                                                         data-id="8e83b9a" data-element_type="column">
-                                                        <div
-                                                            class="elementor-column-wrap elementor-element-populated">
+                                                        <div class="elementor-column-wrap elementor-element-populated">
                                                             <div class="elementor-widget-wrap">
                                                                 <div class="elementor-element elementor-element-4337bbb elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box"
                                                                     data-id="4337bbb" data-element_type="widget"
@@ -1265,13 +1264,11 @@
                                                                                 <img width="335" height="334"
                                                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20335%20334'%3E%3C/svg%3E"
                                                                                     class="attachment-full size-full"
-                                                                                    alt="badge-diamond"
-                                                                                    loading="lazy"
+                                                                                    alt="badge-diamond" loading="lazy"
                                                                                     data-lazy-src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-diamond.png"
                                                                                     pagespeed_url_hash="1005930846"
                                                                                     onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /><noscript><img
-                                                                                        width="335"
-                                                                                        height="334"
+                                                                                        width="335" height="334"
                                                                                         src="https://www.btaskee.com/wp-content/uploads/2020/10/badge-diamond.png"
                                                                                         class="attachment-full size-full"
                                                                                         alt="badge-diamond"
@@ -1331,36 +1328,31 @@
                                                         <div id="elementor-tab-title-2491"
                                                             class="elementor-tab-title elementor-tab-desktop-title"
                                                             aria-selected="true" data-tab="1" role="tab"
-                                                            tabindex="0"
-                                                            aria-controls="elementor-tab-content-2491"
+                                                            tabindex="0" aria-controls="elementor-tab-content-2491"
                                                             aria-expanded="false"><a href="">Công việc
                                                                 chung</a></div>
                                                         <div id="elementor-tab-title-2492"
                                                             class="elementor-tab-title elementor-tab-desktop-title"
                                                             aria-selected="false" data-tab="2" role="tab"
-                                                            tabindex="-1"
-                                                            aria-controls="elementor-tab-content-2492"
+                                                            tabindex="-1" aria-controls="elementor-tab-content-2492"
                                                             aria-expanded="false"><a href="">Nhà bếp</a>
                                                         </div>
                                                         <div id="elementor-tab-title-2493"
                                                             class="elementor-tab-title elementor-tab-desktop-title"
                                                             aria-selected="false" data-tab="3" role="tab"
-                                                            tabindex="-1"
-                                                            aria-controls="elementor-tab-content-2493"
+                                                            tabindex="-1" aria-controls="elementor-tab-content-2493"
                                                             aria-expanded="false"><a href="">Phòng ngủ</a>
                                                         </div>
                                                         <div id="elementor-tab-title-2494"
                                                             class="elementor-tab-title elementor-tab-desktop-title"
                                                             aria-selected="false" data-tab="4" role="tab"
-                                                            tabindex="-1"
-                                                            aria-controls="elementor-tab-content-2494"
+                                                            tabindex="-1" aria-controls="elementor-tab-content-2494"
                                                             aria-expanded="false"><a href="">Nhà tắm</a>
                                                         </div>
                                                         <div id="elementor-tab-title-2495"
                                                             class="elementor-tab-title elementor-tab-desktop-title"
                                                             aria-selected="false" data-tab="5" role="tab"
-                                                            tabindex="-1"
-                                                            aria-controls="elementor-tab-content-2495"
+                                                            tabindex="-1" aria-controls="elementor-tab-content-2495"
                                                             aria-expanded="false"><a href="">Tùy chọn
                                                                 thêm</a></div>
                                                     </div>
@@ -1368,14 +1360,13 @@
                                                         aria-orientation="vertical">
                                                         <div class="elementor-tab-title elementor-tab-mobile-title"
                                                             aria-selected="true" data-tab="1" role="tab"
-                                                            tabindex="0"
-                                                            aria-controls="elementor-tab-content-2491"
+                                                            tabindex="0" aria-controls="elementor-tab-content-2491"
                                                             aria-expanded="false">Công việc chung</div>
                                                         <div id="elementor-tab-content-2491"
                                                             class="elementor-tab-content elementor-clearfix"
                                                             data-tab="1" role="tabpanel"
-                                                            aria-labelledby="elementor-tab-title-2491"
-                                                            tabindex="0" hidden="false">
+                                                            aria-labelledby="elementor-tab-title-2491" tabindex="0"
+                                                            hidden="false">
                                                             <div class="column-sub"><img loading="lazy"
                                                                     src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E"
                                                                     alt="disinfection-livingroom-phong-khach"
@@ -1583,102 +1574,27 @@
                                                 <div class="elementor-swiper">
                                                     <div class="elementor-main-swiper swiper-container">
                                                         <div class="swiper-wrapper">
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>60 m<sup>2</sup> </h3>
-                                                                            <p>(2 người - 3 tiếng)</p> <br>
-                                                                            <hr>
+                                                            @foreach ($service->details as $item)
+                                                                <div class="swiper-slide">
+                                                                    <div class="elementor-testimonial">
+                                                                        <div class="elementor-testimonial__content">
+                                                                            <div class="elementor-testimonial__text">
+                                                                                <h3>{{ $item->area }} m<sup>2</sup>
+                                                                                </h3>
+                                                                                <p>({{ $item->people }} người -
+                                                                                    {{ $item->hours }} tiếng)</p> <br>
+                                                                                <hr>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-testimonial__footer">
+                                                                            <cite
+                                                                                class="elementor-testimonial__cite"><span
+                                                                                    class="elementor-testimonial__name">{{ $item->price_format }}<sup>đ</sup>
+                                                                                </span></cite>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">450,000<sup>đ</sup>
-                                                                                - 570,000<sup>đ</sup></span></cite>
-                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>80 m<sup>2</sup> </h3>
-                                                                            <p>(2 người - 4 tiếng)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">600,000<sup>đ</sup>
-                                                                                - 760,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>100 m<sup>2</sup> </h3>
-                                                                            <p>(3 người - 3 tiếng)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">675,000<sup>đ</sup>
-                                                                                - 855,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>150 m<sup>2</sup> </h3>
-                                                                            <p>(3 người - 4 tiếng)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">900,000<sup>đ</sup>
-                                                                                - 1,140,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>200 m<sup>2</sup> </h3>
-                                                                            <p>(4 người - 4 tiếng)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">1,200,000<sup>đ</sup>
-                                                                                - 1,520,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="swiper-slide">
-                                                                <div class="elementor-testimonial">
-                                                                    <div class="elementor-testimonial__content">
-                                                                        <div class="elementor-testimonial__text">
-                                                                            <h3>400 m<sup>2</sup> </h3>
-                                                                            <p>(4 người - 8 tiếng)</p> <br>
-                                                                            <hr>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-testimonial__footer"> <cite
-                                                                            class="elementor-testimonial__cite"><span
-                                                                                class="elementor-testimonial__name">2,640,000<sup>đ</sup>
-                                                                                - 3,344,000<sup>đ</sup></span></cite>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            @endforeach
                                                         </div>
                                                         <div class="swiper-pagination"></div>
                                                     </div>

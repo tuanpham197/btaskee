@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,11 +34,14 @@ Route::post('register', [UserController::class, 'register']);
 Route::group([
     'middleware' => 'auth'
 ], function() {
-    Route::get('address/province', [AddressController::class, 'getProvinces']);
-    Route::get('address/disctrict/{id}', [AddressController::class, 'getDisctricts']);
-    Route::get('address/ward/{id}', [AddressController::class, 'getWards']);
+    Route::get('address/province', [AddressController::class, 'getProvinces'])->name('ajax.provinces');;
+    Route::get('address/district/{provinceId}', [AddressController::class, 'getDistricts'])->name('ajax.districts');;
+    Route::get('address/ward/{districtId}', [AddressController::class, 'getWards'])->name('ajax.wards');
+    Route::get('services-detail/{serviceId}', [ServiceController::class, 'ajaxDetailList'])->name('ajax.services');
 });
 
+Route::get('/booking', [BookingController::class, 'index']);
+Route::get('services/{id}', [ServiceController::class, 'detail']);
 
 
 
@@ -43,9 +49,8 @@ Route::group([
 
 
 
-Route::get('/', function () {
-    return view('customers.home');
-})->name('home');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about', function () {
     return view('customers.about');
@@ -73,6 +78,4 @@ Route::get('/reward', function () {
     return view('customers.reward');
 });
 
-Route::get('/booking', function () {
-    return view('customers.booking');
-});
+

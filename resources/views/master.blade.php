@@ -323,8 +323,8 @@
             }
         }
     </script>
-
     <script defer src='//www.btaskee.com/wp-content/cache/www.btaskee.com/wpfc-minified/9a3f054u/23in7.js'></script>
+    @yield('footer-js')
 </body>
 
 </html>
