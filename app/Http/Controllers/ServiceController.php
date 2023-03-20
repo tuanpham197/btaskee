@@ -27,9 +27,10 @@ class ServiceController extends Controller
         return view($view, compact('service'));
     }
 
-    public function ajaxDetailList($serviceId)
+    public function ajaxDetailList(Request $request, $serviceId)
     {
+        $selected = $request->only('selected')['selected'] ?? 1;
         $details = ServiceDetail::where('service_id', $serviceId)->get();
-        return view('ajax.service_details', compact('details'));
+        return view('ajax.service_details', compact('details', 'selected'));
     }
 }
