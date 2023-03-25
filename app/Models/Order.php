@@ -37,7 +37,8 @@ class Order extends Model
         'payment_method',
         'service_id',
         'status',
-        'created_at'
+        'created_at',
+        'user_id',
     ];
 
     public function orderDetails()

@@ -7,11 +7,13 @@ use App\Models\Order;
 use App\Models\OrderDetail;
 use App\Models\Province;
 use App\Models\ServiceDetail;
+use App\Models\User;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 
@@ -85,32 +87,42 @@ class BookingController extends Controller
         $dataRedirect = session()->get('data') ?? '';
         $data = $this->generateRangeTime();
          if (blank($dataRedirect)) {
-            return redirect()->route('booking');
+            return redirect()->route('render-shifts');
         }
 
         $order = $dataRedirect['order'];
         $orderDetail = $dataRedirect['orderDetail'];
-
-        // $order = Order::find(1);
-        // $orderDetail = OrderDetail::find(1);
 
         return view('customers.shifts', compact('data', 'order', 'orderDetail'));
     }
 
     public function payment(Request $request)
     {
-        $shifts = $request->only('date','times', 'order_detail_id');
-        $serviceDetail = OrderDetail::where('id', $shifts['order_detail_id'])
-                ->first();
+        try {
+            DB::beginTransaction();
+            $shifts = $request->only('date','times', 'order_detail_id');
+            $serviceDetail = OrderDetail::where('id', $shifts['order_detail_id'])
+                    ->first();
 
-        if (!$serviceDetail) {
-            abort(404);
+            if (!$serviceDetail) {
+                abort(404);
+            }
+            $order = Order::find($shifts['order_detail_id']);
+
+            $serviceDetail->shifts = $shifts['times'];
+            $serviceDetail->date_work = Carbon::createFromFormat('d-m-Y', $shifts['date'])->startOfHour();
+            $serviceDetail->save();
+
+            $order->status = Order::ORDER_STATUS_PROCESSING;
+            $order->save();
+            DB::commit();
+            return Redirect::route('detail-booking', [$serviceDetail->order_id]);
+        } catch (\Exception $th) {
+            Log::error('ERROR: '. $th->getMessage());
+            DB::rollBack();
+            return redirect()->route('render-shifts');
         }
 
-        $serviceDetail->shifts = $shifts['times'];
-        $serviceDetail->date_work = Carbon::createFromFormat('d-m-Y', $shifts['date'])->startOfHour();
-        $serviceDetail->save();
-        return Redirect::route('detail-booking', [$serviceDetail->order_id]);
         // return view('customers.payment', compact('serviceDetail'));
     }
 
@@ -137,5 +149,26 @@ class BookingController extends Controller
         $data = $request->only('date_work');
         $shifts = $this->generateRangeTime($data['date_work']);
         return view('ajax.shifts_range', compact('shifts'));
+    }
+
+    public function renderPayment(Request $request)
+    {
+        $user = Auth::user();
+        if (empty($user)) {
+            return redirect()->route('login');
+        }
+
+        $order = Order::with('orderDetails')
+                    ->where('user_id', $user->id)
+                    ->where('status', Order::ORDER_STATUS_DRAFT)
+                    ->latest()
+                    ->first();
+        $orderDetail = $order->orderDetails[0] ?? null;
+        if (empty($orderDetail)) {
+            return redirect()->route('booking');
+        }
+        $data = $this->generateRangeTime();
+        return view('customers.shifts', compact('data', 'order', 'orderDetail'));
+
     }
 }

@@ -4,15 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Order;
 use Illuminate\Http\Request;
-use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
-use Omnipay\Omnipay;
 
 class CheckoutController extends Controller
 {
     public function checkout(Request $request)
     {
-        $uuid = Uuid::uuid4();
         $data = $request->only('payment_method', 'total', 'order_id');
         $paymentMethod = $data['payment_method'] ?? 2;
         $total = $data['total'];
@@ -23,57 +22,80 @@ class CheckoutController extends Controller
                 $redirectUrl = $this->payWithMomo($orderId, $total);
                 return redirect($redirectUrl);
                 break;
-
+            case 2:
+                return $this->payWithCash($orderId, $total);
             default:
-                # code...
+                return redirect()->route('home');
                 break;
         }
+
 
     }
 
     private function payWithMomo($orderId, $total)
     {
-        $url = URL::to('/');
-        $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
-        $partnerCode = 'MOMOBKUN20180529';
-        $accessKey = 'klm05TvNBzhg7h7j';
-        $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
-        $orderInfo = "Thanh toán qua MoMo";
-        $amount = $total;
-        $redirectUrl =  $url . '/checkout-success';
-        $ipnUrl = $url . '/checkout-ipn';
-        $extraData = "";
-        $orderId = $orderId . '_' . time(); // Mã đơn hàng
+        try {
 
-        $requestId = time() . "";
-        // $requestType = "payWithATM";
-        $requestType = "captureWallet";
-        //before sign HMAC SHA256 signature
-        $rawHash = "accessKey=" . $accessKey . "&amount=" . $amount . "&extraData=" . $extraData . "&ipnUrl=" . $ipnUrl . "&orderId=" . $orderId . "&orderInfo=" . $orderInfo . "&partnerCode=" . $partnerCode . "&redirectUrl=" . $redirectUrl . "&requestId=" . $requestId . "&requestType=" . $requestType;
-        $signature = hash_hmac("sha256", $rawHash, $secretKey);
-        $data = array('partnerCode' => $partnerCode,
-            'partnerName' => "Test",
-            "storeId" => "MomoTestStore",
-            'requestId' => $requestId,
-            'amount' => $amount,
-            'orderId' => $orderId,
-            'orderInfo' => $orderInfo,
-            'redirectUrl' => $redirectUrl,
-            'ipnUrl' => $ipnUrl,
-            'lang' => 'vi',
-            'extraData' => $extraData,
-            'requestType' => $requestType,
-            'signature' => $signature);
-        $result = $this->execPostRequest($endpoint, json_encode($data));
-        $jsonResult = json_decode($result, true);  // decode json
+            DB::beginTransaction();
 
-        //Just a example, please check more in there
+            $url = URL::to('/');
+            $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
+            $partnerCode = 'MOMOBKUN20180529';
+            $accessKey = 'klm05TvNBzhg7h7j';
+            $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
+            $orderInfo = "Thanh toán qua MoMo";
+            $amount = $total;
+            $redirectUrl =  $url . '/checkout-success';
+            $ipnUrl = $url . '/checkout-ipn';
+            $extraData = "";
+            $order = Order::find($orderId);
+            $order->payment_method = Order::PAYMENT_METHOD_MOMO;
+            $order->save();
+            $orderId = $orderId . '_' . time(); // Mã đơn hàng
 
-        return $jsonResult['payUrl'];
+            $requestId = time() . "";
+            $requestType = "payWithATM";
+            // $requestType = "captureWallet";
+            //before sign HMAC SHA256 signature
+            $rawHash = "accessKey=" . $accessKey . "&amount=" . $amount . "&extraData=" . $extraData . "&ipnUrl=" . $ipnUrl . "&orderId=" . $orderId . "&orderInfo=" . $orderInfo . "&partnerCode=" . $partnerCode . "&redirectUrl=" . $redirectUrl . "&requestId=" . $requestId . "&requestType=" . $requestType;
+            $signature = hash_hmac("sha256", $rawHash, $secretKey);
+            $data = array('partnerCode' => $partnerCode,
+                'partnerName' => "Test",
+                "storeId" => "MomoTestStore",
+                'requestId' => $requestId,
+                'amount' => $amount,
+                'orderId' => $orderId,
+                'orderInfo' => $orderInfo,
+                'redirectUrl' => $redirectUrl,
+                'ipnUrl' => $ipnUrl,
+                'lang' => 'vi',
+                'extraData' => $extraData,
+                'requestType' => $requestType,
+                'signature' => $signature);
+            $result = $this->execPostRequest($endpoint, json_encode($data));
+            $jsonResult = json_decode($result, true);  // decode json
+
+            //Just a example, please check more in there
+            DB::commit();
+            return $jsonResult['payUrl'];
+        } catch (\Exception $e) {
+            Log::error('ORDER FAIL: '. $e->getMessage());
+            return redirect()->route('home');
+        }
+
     }
 
     public function payWithCash($orderId, $total)
     {
+        try {
+            $order = Order::with('orderDetails','province', 'district', 'ward', 'service')->find($orderId);
+            $order->payment_method = Order::PAYMENT_METHOD_CASH;
+            $order->save();
+            return view('customers.checkout_success', compact('order'));
+        } catch (\Exception $e) {
+            Log::error('ORDER FAIL: ' . $e->getMessage());
+            return redirect()->route('home');
+        }
 
     }
 
@@ -113,10 +135,10 @@ class CheckoutController extends Controller
             }
 
             if ($dataRequest['resultCode'] == '0') {
-                $order  = Order::find($orderId);
+                $order  = Order::with('orderDetails','province', 'district', 'ward', 'service')->find($orderId);
                 $order->status = Order::ORDER_STATUS_PAID;
                 $order->save();
-                return view('customers.checkout_success');
+                return view('customers.checkout_success', compact('order'));
             }
         } catch (\Throwable $th) {
             $message = $dataRequest['message'] ?? '';

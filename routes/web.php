@@ -52,9 +52,7 @@ Route::group([
 
     Route::get('/shifts', [BookingController::class, 'shifts'])->name('shifts');
     Route::get('/shift-range', [BookingController::class, 'generateRangeTimeAjax']);
-    Route::get('payment', function() {
-        return view('customers.payment');
-    });
+    Route::get('payment', [BookingController::class, 'renderPayment'])->name('render-shifts');
 
 });
 
@@ -66,7 +64,9 @@ Route::get('services/{id}', [ServiceController::class, 'detail']);
 
 
 
-
+Route::get('admin/dashboard', function() {
+    return view('admin.index');
+});
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 

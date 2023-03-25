@@ -66,7 +66,7 @@
                         <div class="col">
                             <label for="exampleFormControlInput1" class="form-label">Số nhà / tên đường</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" name="address"
-                                placeholder="Nhập địa chỉ chi tiết">
+                                placeholder="Nhập địa chỉ chi tiết" value="{{old('address')}}">
                         </div>
                     </div>
                     <div class="row pt-3">
