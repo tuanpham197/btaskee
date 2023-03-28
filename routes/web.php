@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\Admin\DashBoardController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\HomeController;
@@ -63,10 +64,21 @@ Route::get('services/{id}', [ServiceController::class, 'detail']);
 
 
 
+Route::group([
+    'prefix' => 'admin',
+    'middleware' => 'admin'
+], function() {
+    Route::get('dashboard', [DashBoardController::class, 'index'])->name('admin-home');
 
-Route::get('admin/dashboard', function() {
-    return view('admin.index');
+    Route::group([
+        'prefix' => 'order'
+    ], function() {
+        Route::get('paid', [DashBoardController::class, 'orderPaid'])->name('admin-order-paid');
+        Route::get('assign-worker/{orderId}', [DashBoardController::class, 'assignWorkerOrder'])->name('assign-worker');
+        Route::post('assign-worker/{orderId}', [DashBoardController::class, 'assignWorkerOrderPost'])->name('assign-worker-post');
+    });
 });
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 

@@ -39,6 +39,7 @@ class Order extends Model
         'status',
         'created_at',
         'user_id',
+        'worker_id'
     ];
 
     public function orderDetails()
@@ -64,5 +65,15 @@ class Order extends Model
     public function ward()
     {
         return $this->belongsTo(Ward::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function worker()
+    {
+        return $this->belongsTo(User::class, 'worker_id', 'id');
     }
 }
