@@ -32,9 +32,16 @@
             <a href="/booking" class="elementor-item">Đặt dịch vụ</a>
         </li>
         @auth
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;justify-content: center;">
-                <p class="elementor-item" style="margin:0">{{Auth::user()->username}}</p>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30780" style="display:flex;align-items: center;justify-content: center;">
+                <a class="elementor-item">{{Auth::user()->username}}</a>
+                <ul class="sub-menu elementor-nav-menu--dropdown">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30781">
+                        <a href="{{route('switch-voucher')}}" class="elementor-sub-item">Đổi voucher</a>
+                    </li>
+                </ul>
             </li>
+
+
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32048" style="display:flex;align-items: center;">
                 <a href="/logout" class="elementor-item">Đăng xuất</a>
             </li>

@@ -42,7 +42,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                             class="elementor-post elementor-grid-item post-66376 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
                                             <div class="elementor-post__card">
                                                 <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/btaskee-ra-mat-dich-vu-tai-bao-loc/">
+                                                    href="{{route('post-one')}}">
                                                     <div class="elementor-post__thumbnail"><img width="300"
                                                             height="200"
                                                             src="https://www.btaskee.com/wp-content/uploads/2022/12/bao-loc-thong-cao-bao-chi-300x200.jpg"
@@ -52,7 +52,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                                 </a>
                                                 <div class="elementor-post__text"> <span
                                                         class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/btaskee-ra-mat-dich-vu-tai-bao-loc/">
+                                                            href="{{route('post-one')}}">
                                                             bTaskee Chính Thức Ra Mắt Tại Bảo Lộc &#8211; Lâm
                                                             Đồng </a> </span></div>
                                                 <div class="elementor-post__meta-data"> <span
@@ -63,7 +63,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                             class="elementor-post elementor-grid-item post-62278 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
                                             <div class="elementor-post__card">
                                                 <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/binh-duong-ra-mat-dich-vu-moi-trong-tre/">
+                                                    href="{{route('post-two')}}">
                                                     <div class="elementor-post__thumbnail"><img width="300"
                                                             height="300"
                                                             src="https://www.btaskee.com/wp-content/uploads/2022/08/trong-tre-binh-duong-300x300.jpg"
@@ -74,7 +74,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                                 </a>
                                                 <div class="elementor-post__text"> <span
                                                         class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/binh-duong-ra-mat-dich-vu-moi-trong-tre/">
+                                                            href="{{route('post-two')}}">
                                                             bTaskee Ra Mắt Dịch Vụ Mới Tại Bình Dương: “Trông
                                                             Trẻ” </a> </span></div>
                                                 <div class="elementor-post__meta-data"> <span
@@ -85,7 +85,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                             class="elementor-post elementor-grid-item post-59534 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
                                             <div class="elementor-post__card">
                                                 <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/ra-mat-dich-vu-moi-trong-tre/">
+                                                    href="{{route('post-three')}}">
                                                     <div class="elementor-post__thumbnail"><img width="300"
                                                             height="300"
                                                             src="https://www.btaskee.com/wp-content/uploads/2022/05/ra-mat-dich-vu-moi-trong-tre-1-300x300.jpg"
@@ -96,7 +96,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                                 </a>
                                                 <div class="elementor-post__text"> <span
                                                         class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/ra-mat-dich-vu-moi-trong-tre/">
+                                                            href="{{route('post-three')}}">
                                                             bTaskee Chính Thức Ra Mắt Dịch Vụ Trông Trẻ </a>
                                                     </span></div>
                                                 <div class="elementor-post__meta-data"> <span
@@ -107,7 +107,7 @@ class="elementor elementor-16113 elementor-location-archive">
                                             class="elementor-post elementor-grid-item post-58304 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
                                             <div class="elementor-post__card">
                                                 <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/btaskee-chinh-thuc-co-mat-tai-hoi-an/">
+                                                    href="{{route('post-four')}}">
                                                     <div class="elementor-post__thumbnail"><img width="300"
                                                             height="200"
                                                             src="https://www.btaskee.com/wp-content/uploads/2022/05/btaskee-chinh-thuc-co-mat-tai-hoi-an-300x200.jpg"
@@ -118,52 +118,11 @@ class="elementor elementor-16113 elementor-location-archive">
                                                 </a>
                                                 <div class="elementor-post__text"> <span
                                                         class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/btaskee-chinh-thuc-co-mat-tai-hoi-an/">
+                                                            href="{{route('post-four')}}">
                                                             bTaskee Chính Thức Có Mặt Tại Hội An </a> </span>
                                                 </div>
                                                 <div class="elementor-post__meta-data"> <span
                                                         class="elementor-post-date"> 16/05/2022 </span></div>
-                                            </div>
-                                        </article>
-                                        <article
-                                            class="elementor-post elementor-grid-item post-49044 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
-                                            <div class="elementor-post__card">
-                                                <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/dich-vu-tien-ich-premium/">
-                                                    <div class="elementor-post__thumbnail"><img width="300"
-                                                            height="150"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2021/12/bTaskee_2111-29_TCBC-Premium-300x150.jpg"
-                                                            class="attachment-medium size-medium"
-                                                            alt="Dịch vụ tiện ích Premium">
-                                                    </div>
-                                                </a>
-                                                <div class="elementor-post__text"> <span
-                                                        class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/dich-vu-tien-ich-premium/">
-                                                            DỊCH VỤ TIỆN ÍCH PREMIUM </a> </span></div>
-                                                <div class="elementor-post__meta-data"> <span
-                                                        class="elementor-post-date"> 13/12/2021 </span></div>
-                                            </div>
-                                        </article>
-                                        <article
-                                            class="elementor-post elementor-grid-item post-49041 post type-post status-publish format-standard has-post-thumbnail hentry category-thong-cao-bao-chi">
-                                            <div class="elementor-post__card">
-                                                <a class="elementor-post__thumbnail__link"
-                                                    href="https://www.btaskee.com/thong-cao-bao-chi/dich-vu-cham-soc-nguoi-cao-tuoi/">
-                                                    <div class="elementor-post__thumbnail"><img width="300"
-                                                            height="150"
-                                                            src="https://www.btaskee.com/wp-content/uploads/2021/12/dich-vu-cham-soc-nguoi-cao-tuoi-300x150.jpg"
-                                                            class="attachment-medium size-medium"
-                                                            alt="Dịch vụ chăm sóc người cao tuổi" >
-                                                    </div>
-                                                </a>
-                                                <div class="elementor-post__text"> <span
-                                                        class="elementor-post__title"> <a
-                                                            href="https://www.btaskee.com/thong-cao-bao-chi/dich-vu-cham-soc-nguoi-cao-tuoi/">
-                                                            Thông Cáo Báo Chí: bTaskee Cho Ra Mắt Dịch Vụ Chăm
-                                                            Sóc Người Cao Tuổi </a> </span></div>
-                                                <div class="elementor-post__meta-data"> <span
-                                                        class="elementor-post-date"> 13/12/2021 </span></div>
                                             </div>
                                         </article>
                                     </div>

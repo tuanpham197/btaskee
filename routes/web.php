@@ -55,6 +55,8 @@ Route::group([
     Route::get('/shift-range', [BookingController::class, 'generateRangeTimeAjax']);
     Route::get('payment', [BookingController::class, 'renderPayment'])->name('render-shifts');
 
+    Route::get('switch-voucher', [UserController::class, 'switchVoucher'])->name('switch-voucher');
+
 });
 
 Route::get('test', [CheckoutController::class, 'test']);
@@ -77,6 +79,17 @@ Route::group([
         Route::get('assign-worker/{orderId}', [DashBoardController::class, 'assignWorkerOrder'])->name('assign-worker');
         Route::post('assign-worker/{orderId}', [DashBoardController::class, 'assignWorkerOrderPost'])->name('assign-worker-post');
     });
+
+    Route::group([
+        'prefix' => 'voucher'
+    ], function() {
+        Route::get('list', [DashBoardController::class, 'listVoucher'])->name('list-voucher');
+        Route::get('add-view', [DashBoardController::class, 'addView'])->name('add-view');
+        Route::post('store', [DashBoardController::class, 'storeVoucher'])->name('store-voucher');
+        Route::get('edit-view/{voucherId}', [DashBoardController::class, 'editView'])->name('edit-view');
+        Route::post('update/{voucherId}', [DashBoardController::class, 'updateVoucher'])->name('update-voucher');
+        Route::get('delete/{voucherId}', [DashBoardController::class, 'deleteVoucher'])->name('delete-voucher');
+    });
 });
 
 
@@ -85,6 +98,22 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', function () {
     return view('customers.about');
 });
+
+Route::get('info/chinh-thuc-ra-mat-tai-lam-dong', function() {
+    return view('customers.post_1');
+})->name('post-one');
+
+Route::get('info/binh-duong-ra-mat-dich-vu-moi-trong-tre', function() {
+    return view('customers.post_2');
+})->name('post-two');
+
+Route::get('info/ra-mat-dich-vu-moi-trong-tre', function() {
+    return view('customers.post_3');
+})->name('post-three');
+
+Route::get('info/btaskee-chinh-thuc-co-mat-tai-hoi-an', function() {
+    return view('customers.post_4');
+})->name('post-four');
 
 
 Route::get('/info', function () {

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\BookingStep1Request;
+use App\Http\Requests\ShiftRequest;
 use App\Models\Order;
 use App\Models\OrderDetail;
 use App\Models\Province;
@@ -34,6 +35,7 @@ class BookingController extends Controller
             'district',
             'ward'
         ])->find($bookingId);
+
         return view('customers.payment', compact('order'));
     }
 
@@ -96,11 +98,11 @@ class BookingController extends Controller
         return view('customers.shifts', compact('data', 'order', 'orderDetail'));
     }
 
-    public function payment(Request $request)
+    public function payment(ShiftRequest $request)
     {
         try {
             DB::beginTransaction();
-            $shifts = $request->only('date','times', 'order_detail_id');
+            $shifts = $request->validated();
             $serviceDetail = OrderDetail::where('id', $shifts['order_detail_id'])
                     ->first();
 
@@ -129,7 +131,7 @@ class BookingController extends Controller
     private function generateRangeTime($dateSelected='24-03-2023')
     {
         $date = Carbon::createFromFormat('d-m-Y',$dateSelected)->startOfHour();
-        $now = Carbon::now()->startOfHour();
+        $now = Carbon::now()->startOfHour()->addHour(1);
         $data = [];
         $check = $date->gt($now);
         $startTime = Carbon::now()->startOfDay()->addHours(5);

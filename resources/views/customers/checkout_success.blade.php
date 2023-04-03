@@ -67,7 +67,7 @@
                                 $minute = $time->format('i');
 
                                 $dateWork = $order->orderDetails->date_work;
-                                $dayStr = \App\Models\Order::convertToDayVi[$dateWork->dayOfWeek - 1];
+                                $dayStr = \App\Models\Order::convertToDayVi[$dateWork->dayOfWeek];
 
                                 $day = $dateWork->format('d');
                                 $month = $dateWork->format('m');

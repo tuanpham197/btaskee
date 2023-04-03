@@ -51,6 +51,11 @@ class UserController extends Controller
         }
     }
 
+    public function switchVoucher()
+    {
+        return view('customers.switch_voucher');
+    }
+
     /**
      * Display a listing of the resource.
      *

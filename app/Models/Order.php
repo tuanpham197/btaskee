@@ -18,13 +18,13 @@ class Order extends Model
     const PAYMENT_METHOD_MOMO = 2;
     // const PAYMENT_METHOD_BPAY = 3;
     const convertToDayVi = [
+        'Chủ Nhật',
         'Thứ Hai',
         'Thứ Ba',
         'Thứ Tư',
         'Thứ Năm',
         'Thứ Sáu',
         'Thứ Bảy',
-        'Chủ Nhật',
     ];
 
 

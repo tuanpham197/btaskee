@@ -143,7 +143,7 @@
             border: 1px solid #3D5AFE;
         }
 
-        .cell.select {
+        .cell.highlight {
             background-color: #3D5AFE;
             color: #fff;
         }
@@ -163,6 +163,14 @@
         }
         .shifts-time {
             display: none;
+        }
+        .box {
+            padding: 10px 20px;
+            border: 1px solid blue;
+        }
+        .highlight {
+            background-color: #FF8228;
+            color:white;
         }
     </style>
 @endsection
@@ -201,10 +209,11 @@
                                     </div>
                                     <div class="card-body p-3 p-sm-5">
                                         <div class="row text-center mx-0" id="shifts">
+
                                             @foreach ($data as $key => $shift)
                                             <div class="col-md-2 col-4 m-1 px-2">
-                                                <input type="radio" value="{{$shift}}" id="test_{{$key}}" class="shifts-time" name="times">
-                                                <div class="cell p-2"><label for="test_{{$key}}">{{$shift}}</label></div>
+                                                <label for="test{{$key}}" class="box" onclick="highlight(this)">{{$shift}}</label>
+                                                <input type="radio" name="times" value="{{$shift}}" id="test{{$key}}" class="shifts-time" >
                                             </div>
                                             @endforeach
                                         </div>
@@ -241,13 +250,23 @@
                 generateShiftsRange(event.target.value)
             });
 
-            $('.cell').click(function() {
-                $('.cell').removeClass('select');
-                $(this).addClass('select');
-            });
+            // $('.cell').click(function() {
+            //     $('.cell').removeClass('highlight');
+            //     $(this).addClass('highlight');
+            // });
 
             // generateShiftsRange(createDayCurrent())
         });
+
+        function highlight(ele) {
+            let listElement = document.getElementsByClassName('box')
+            let len = listElement.length
+            for (let i=0;i<len;i++) {
+                listElement[i].classList.remove('highlight')
+            }
+
+            ele.classList.add('highlight')
+        }
 
         function generateShiftsRange(date) {
 
