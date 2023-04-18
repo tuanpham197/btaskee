@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CheckoutRequest;
 use App\Models\Order;
+use App\Models\Voucher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -10,12 +12,22 @@ use Illuminate\Support\Facades\URL;
 
 class CheckoutController extends Controller
 {
-    public function checkout(Request $request)
+    public function checkout(CheckoutRequest $request)
     {
-        $data = $request->only('payment_method', 'total', 'order_id');
+        $data = $request->only('payment_method', 'total', 'order_id', 'voucher');
         $paymentMethod = $data['payment_method'] ?? 2;
         $total = $data['total'];
         $orderId = $data['order_id'];
+        if ($data['voucher']) {
+            $voucher = Voucher::find($data['voucher']);
+            if ($voucher) {
+                if ($voucher->type == Voucher::TYPE_MONEY) {
+                    $total = $total - $voucher->number;
+                } else {
+                    $total = $total - (($total * $voucher->number)*100);
+                }
+            }
+        }
 
         switch ($paymentMethod) {
             case 1:

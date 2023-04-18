@@ -5,9 +5,13 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UserLoginRequest;
 use App\Http\Requests\UserRegisterRequest;
 use App\Models\User;
+use App\Models\UserVoucher;
+use App\Models\Voucher;
+use Carbon\Carbon;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -53,7 +57,40 @@ class UserController extends Controller
 
     public function switchVoucher()
     {
-        return view('customers.switch_voucher');
+        $vouchers = Voucher::where('expried_at', '>', Carbon::now())
+        ->whereNotExists(function ($query) {
+            $query->select(DB::raw(1))
+                  ->from('user_vouchers')
+                  ->where('user_id', Auth::user()->id);
+        })
+            ->get();
+
+        $voucherUsers = Voucher::where('expried_at', '>', Carbon::now())
+            ->whereExists(function ($query) {
+                $query->select(DB::raw(1))
+                  ->from('user_vouchers')
+                  ->where('user_id', Auth::user()->id);
+            })
+            ->get();
+
+
+        return view('customers.switch_voucher', compact('vouchers', 'voucherUsers'));
+    }
+
+    public function swipVoucher($id)
+    {
+        $isCreate = DB::table('user_vouchers')->updateOrInsert([
+            'voucher_id' => $id,
+            'user_id' => Auth::user()->id
+        ], [
+            'is_use' => false,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+        if ($isCreate) {
+            return redirect()->route('switch-voucher');
+        }
+        return redirect()->route('home');
     }
 
     /**

@@ -56,7 +56,7 @@ Route::group([
     Route::get('payment', [BookingController::class, 'renderPayment'])->name('render-shifts');
 
     Route::get('switch-voucher', [UserController::class, 'switchVoucher'])->name('switch-voucher');
-
+    Route::get('swip-voucher/{id}', [UserController::class, 'swipVoucher'])->name('swip-voucher');
 });
 
 Route::get('test', [CheckoutController::class, 'test']);

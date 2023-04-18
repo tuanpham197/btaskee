@@ -9,6 +9,7 @@ use App\Models\OrderDetail;
 use App\Models\Province;
 use App\Models\ServiceDetail;
 use App\Models\User;
+use App\Models\Voucher;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
@@ -36,7 +37,15 @@ class BookingController extends Controller
             'ward'
         ])->find($bookingId);
 
-        return view('customers.payment', compact('order'));
+        $voucherUsers = Voucher::where('expried_at', '>', Carbon::now())
+            ->whereExists(function ($query) {
+                $query->select(DB::raw(1))
+                  ->from('user_vouchers')
+                  ->where('user_id', Auth::user()->id);
+            })
+            ->get();
+
+        return view('customers.payment', compact('order', 'voucherUsers'));
     }
 
     public function booking(BookingStep1Request $request)

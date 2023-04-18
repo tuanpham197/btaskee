@@ -31,6 +31,36 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 p-5">
+                <h1>Danh sách voucher của bạn</h1>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="row">
+                    @foreach ($voucherUsers as $item)
+                    <div class="col-md-4 mb-2">
+                        <div class="card" >
+                            <div class="card-body">
+                              <h5 class="card-title">{{$item->name}}</h5>
+                              <p class="card-text">Số point: {{$item->point}} </p>
+                              <p class="card-text">Discount: {{$item->number}}%</p>
+                              <p class="card-text">Ngày hết hạn: {{$item->expried_at}}</p>
+                            </div>
+                          </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-5">
                 <h1>Danh sách voucher</h1>
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -42,61 +72,27 @@
                     </div>
                 @endif
                 <div class="row">
+                    @foreach ($vouchers as $item)
                     <div class="col-md-4 mb-2">
                         <div class="card" >
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Số point: </p>
-                              <p class="card-text">Discount: </p>
-                              <p class="card-text">Ngày hết hạn: </p>
-                              <a href="#" class="btn btn-primary text-white">Đổi</a>
+                              <h5 class="card-title">{{$item->name}}</h5>
+                              <p class="card-text">Số point: {{$item->point}} </p>
+                              <p class="card-text">Discount: {{$item->number}} %</p>
+                              <p class="card-text">Ngày hết hạn: {{$item->expried_at}}</p>
+                              <a href="{{route('swip-voucher', $item->id)}}" class="btn btn-primary text-white">
+                                @if ($item->point <= \Auth::user()->point)
+                                    Đủ điều kiện đổi
+                                @else
+                                    Chưa đủ điều kiện
+                                @endif
+                              </a>
                             </div>
                           </div>
                     </div>
-                    <div class="col-md-4 mb-2">
-                        <div class="card" >
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Số point: </p>
-                              <p class="card-text">Discount: </p>
-                              <p class="card-text">Ngày hết hạn: </p>
-                              <a href="#" class="btn btn-primary text-white">Đổi</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <div class="card" >
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Số point: </p>
-                              <p class="card-text">Discount: </p>
-                              <p class="card-text">Ngày hết hạn: </p>
-                              <a href="#" class="btn btn-primary text-white">Đổi</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <div class="card" >
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Số point: </p>
-                              <p class="card-text">Discount: </p>
-                              <p class="card-text">Ngày hết hạn: </p>
-                              <a href="#" class="btn btn-primary text-white">Đổi</a>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <div class="card" >
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Số point: </p>
-                              <p class="card-text">Discount: </p>
-                              <p class="card-text">Ngày hết hạn: </p>
-                              <a href="#" class="btn btn-primary text-white">Đổi</a>
-                            </div>
-                          </div>
-                    </div>
+                    @endforeach
+
+
                 </div>
             </div>
             <div class="col-md-2"></div>
