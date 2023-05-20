@@ -267,7 +267,7 @@
                                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                                             <li
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30784">
-                                                                <a href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
+                                                                <a href=""
                                                                     class="elementor-sub-item" tabindex="-1">Giúp
                                                                     việc nhà theo giờ<sup
                                                                         class="tet_service">Hot</sup></a>
@@ -964,7 +964,7 @@
                                                                                     So với việc chỉ có một người giúp
                                                                                     việc đến thực hiện dọn dẹp như dịch
                                                                                     vụ <a
-                                                                                        href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
+                                                                                        href=""
                                                                                         style="color:#FF8224;font-weight:500;text-decoration-line:underline">giúp
                                                                                         việc theo giờ</a>, dịch vụ tổng
                                                                                     vệ sinh luôn có ít nhất 2 - 3 người

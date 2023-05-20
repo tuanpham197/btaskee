@@ -15,7 +15,7 @@
                                                 </a>
                                             </div>
                                             <div class="elementor-repeater-item-f2a6021 swiper-slide">
-                                                <div class="swiper-slide-bg"></div><a class="swiper-slide-inner" href="https://www.btaskee.com/giup-viec-nha-theo-gio/">
+                                                <div class="swiper-slide-bg"></div><a class="swiper-slide-inner" href="services/1">
                                                     <div class="swiper-slide-contents"></div>
                                                 </a>
                                             </div>
@@ -38,7 +38,7 @@
                                                 </a>
                                             </div>
                                             <div class="elementor-repeater-item-c7a3f70 swiper-slide">
-                                                <div class="swiper-slide-bg"></div><a class="swiper-slide-inner" href="https://www.btaskee.com/giup-viec-nha-theo-gio/">
+                                                <div class="swiper-slide-bg"></div><a class="swiper-slide-inner" href="services/2">
                                                     <div class="swiper-slide-contents"></div>
                                                 </a>
                                             </div>

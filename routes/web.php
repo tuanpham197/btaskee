@@ -49,6 +49,7 @@ Route::group([
 
     Route::post('checkout', [CheckoutController::class, 'checkout']);
     Route::get('checkout-success', [CheckoutController::class, 'checkoutSuccess']);
+    Route::get('checkout-vnpay-success', [CheckoutController::class, 'checkoutVNPaySuccess']);
     Route::get('checkout-ipn', [CheckoutController::class, 'checkoutIPN']);
 
     Route::get('/shifts', [BookingController::class, 'shifts'])->name('shifts');
@@ -73,6 +74,22 @@ Route::group([
     Route::get('dashboard', [DashBoardController::class, 'index'])->name('admin-home');
 
     Route::group([
+        'prefix' => 'services'
+    ], function() {
+        Route::get('list', [DashBoardController::class, 'listServices'])->name('list-service');
+        Route::get('detail/{id}', [DashBoardController::class, 'detailServices'])->name('detail-service');
+        Route::get('detail/{id}/service-detail/{detailId}', [DashBoardController::class, 'detailChildServices'])->name('detail-child-service');
+        Route::post('detail/service-detail/{detailId}', [DashBoardController::class, 'updateChildSerivce'])->name('update-child-service');
+        Route::get('store-view', [DashBoardController::class, 'storeServiceView'])->name('store-child-view');
+        Route::post('store', [DashBoardController::class, 'storeService'])->name('store-service');
+        Route::get('detail/service-detail/{detailId}', [DashBoardController::class, 'deleteChildSerivce'])->name('delete-child-service');
+        Route::get('detail/delete/{serviceId}', [DashBoardController::class, 'deleteService'])->name('delete-service');
+        Route::get('detail/add/{serviceId}', [DashBoardController::class, 'detailAdd'])->name('detail-add');
+        Route::post('detail/store/{serviceId}', [DashBoardController::class, 'storeDetailService'])->name('detail-store');
+
+    });
+
+    Route::group([
         'prefix' => 'order'
     ], function() {
         Route::get('paid', [DashBoardController::class, 'orderPaid'])->name('admin-order-paid');
@@ -89,6 +106,17 @@ Route::group([
         Route::get('edit-view/{voucherId}', [DashBoardController::class, 'editView'])->name('edit-view');
         Route::post('update/{voucherId}', [DashBoardController::class, 'updateVoucher'])->name('update-voucher');
         Route::get('delete/{voucherId}', [DashBoardController::class, 'deleteVoucher'])->name('delete-voucher');
+    });
+
+    Route::group([
+        'prefix' => 'users'
+    ], function() {
+        Route::get('list', [DashBoardController::class, 'listUser'])->name('list-user');
+        // Route::get('add-view', [DashBoardController::class, 'addView'])->name('add-view');
+        Route::post('store', [DashBoardController::class, 'storeUser'])->name('store-user');
+        Route::get('edit-view/{userId}', [DashBoardController::class, 'editUser'])->name('edit-user');
+        Route::post('update/{userId}', [DashBoardController::class, 'updateUser'])->name('update-user');
+        Route::get('delete/{userId}', [DashBoardController::class, 'deleteUser'])->name('delete-user');
     });
 });
 

@@ -16,6 +16,7 @@ class Voucher extends Model
         'point',
         'number',
         'type',
-        'expried_at'
+        'expried_at',
+        'image'
     ];
 }

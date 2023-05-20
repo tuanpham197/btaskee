@@ -204,7 +204,7 @@
                                     <div class="card-header bg-orange">
                                         <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
                                             <input type="text" id="dp1" class="datepicker" placeholder="Pick Date"
-                                                name="date" readonly><span class="fa fa-calendar"></span>
+                                                name="date" readonly> <img src="{{asset('/images/down.png')}}" alt="">
                                         </div>
                                     </div>
                                     <div class="card-body p-3 p-sm-5">
@@ -221,8 +221,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div class="row justify-content-center mx-0" style="margin-top:20px">
+                        <div class="col-md-12">
                             <button type="bubmit" class="">Checkout</button>
                         </div>
                     </div>
@@ -259,6 +259,7 @@
         });
 
         function highlight(ele) {
+            console.log(123, 'Debug ')
             let listElement = document.getElementsByClassName('box')
             let len = listElement.length
             for (let i=0;i<len;i++) {

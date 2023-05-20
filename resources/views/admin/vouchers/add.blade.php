@@ -31,7 +31,7 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('store-voucher') }}" method="post">
+                        <form action="{{ route('store-voucher') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="name">Tên voucher</label>
@@ -52,6 +52,10 @@
                             <div class="form-group">
                                 <label for="name">Point</label>
                                 <input type="number" class="form-control" id="point" name="point">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Image</label>
+                                <input type="file" class="form-control" id="image" name="image">
                             </div>
                             <div class="form-group">
                                 <label for="expried_at">Ngày hết hạn</label>

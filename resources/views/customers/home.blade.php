@@ -25,7 +25,7 @@
                                                         <div class="elementor-repeater-item-f2a6021 swiper-slide">
                                                             <div class="swiper-slide-bg"></div><a
                                                                 class="swiper-slide-inner"
-                                                                href="https://www.btaskee.com/giup-viec-nha-theo-gio/">
+                                                                href="">
                                                                 <div class="swiper-slide-contents"></div>
                                                             </a>
                                                         </div>
@@ -46,7 +46,7 @@
                                                         <div class="elementor-repeater-item-c7a3f70 swiper-slide">
                                                             <div class="swiper-slide-bg"></div><a
                                                                 class="swiper-slide-inner"
-                                                                href="https://www.btaskee.com/giup-viec-nha-theo-gio/">
+                                                                href="">
                                                                 <div class="swiper-slide-contents"></div>
                                                             </a>
                                                         </div>
@@ -90,7 +90,7 @@
                                                             <div
                                                                 class="elementor-testimonial elementor-repeater-item-078c7ca">
                                                                 <a class="elementor-testimonial__header"
-                                                                    href="https://www.btaskee.com/giup-viec-nha-theo-gio/">
+                                                                    href="">
                                                                     <div class="elementor-testimonial__image"> <img
                                                                             src="https://www.btaskee.com/wp-content/uploads/2020/10/cong-tac-vien-.jpg"
                                                                             alt=""></div>
@@ -106,9 +106,7 @@
                                                                         <p>Là dịch vụ đầu tiên bTaskee triển khai.
                                                                             Giờ đây công việc dọn dẹp không còn là
                                                                             nỗi bận tâm, bạn sẽ có nhiều thời gian
-                                                                            nghỉ ngơi và tận hưởng cuộc sống.</p> <a
-                                                                            href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                            nghỉ ngơi và tận hưởng cuộc sống.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -132,9 +130,7 @@
                                                                         <h3>Tổng vệ sinh</h3>
                                                                         <p>Xử lý chuyên sâu mọi vết bẩn trong căn
                                                                             nhà của bạn với từ 2 cộng tác viên giúp
-                                                                            việc nhà trở lên.</p> <br><br> <a
-                                                                            href="https://www.btaskee.com/tong-ve-sinh/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                            việc nhà trở lên.</p> <br><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -159,9 +155,7 @@
                                                                         <p>Việc mua sắm thực phẩm và đồ dùng gia
                                                                             đình trở nên tiện lợi hơn bao giờ hết.
                                                                             Giao hàng tận nơi chỉ sau 1h.</p>
-                                                                        <br><br> <a
-                                                                            href="https://www.btaskee.com/di-cho/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                        <br><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -186,9 +180,7 @@
                                                                         <p>Giúp cải thiện chất lượng không khí, giảm
                                                                             mức tiêu thụ điện năng và tăng tuổi thọ
                                                                             máy lạnh tại nhà hay phòng làm việc của
-                                                                            bạn.</p> <br> <a
-                                                                            href="https://www.btaskee.com/ve-sinh-may-lanh/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                            bạn.</p> <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -212,9 +204,7 @@
                                                                         <h3>Giặt ủi</h3>
                                                                         <p>Giúp bạn làm sạch quần áo nhanh chóng,
                                                                             cùng tiện ích giao nhận tận nơi.</p>
-                                                                        <br><br><br> <a
-                                                                            href="https://www.btaskee.com/giat-ui/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                        <br><br><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -238,9 +228,7 @@
                                                                         <h3>Vệ sinh sofa, rèm, nệm</h3>
                                                                         <p>Đánh bay vết bẩn và mầm bệnh gây hại từ
                                                                             chính sofa, nệm hay rèm cửa nhà bạn.</p>
-                                                                        <br><br><br> <a
-                                                                            href="https://www.btaskee.com/ve-sinh-sofa-rem-nem/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                        <br><br><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -264,9 +252,7 @@
                                                                         <h3>Dọn dẹp buồng phòng</h3>
                                                                         <p>Giải pháp dọn phòng tuyệt vời nhất dành
                                                                             cho chuỗi khách sạn và homestay.</p>
-                                                                        <br><br><br> <a
-                                                                            href="https://www.btaskee.com/don-dep-buong-phong/"
-                                                                            class="button-line">Tìm hiểu thêm</a>
+                                                                        <br><br><br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -275,12 +261,12 @@
                                                     <div class="swiper-pagination"></div>
                                                     <div
                                                         class="elementor-swiper-button elementor-swiper-button-prev">
-                                                        <i aria-hidden="true" class="eicon-chevron-left"></i>
+                                                       <img src="{{asset('/images/left-arrow.png')}}" alt="">
                                                         <span class="elementor-screen-only">Previous</span>
                                                     </div>
                                                     <div
                                                         class="elementor-swiper-button elementor-swiper-button-next">
-                                                        <i aria-hidden="true" class="eicon-chevron-right"></i>
+                                                        <img src="{{asset('/images/right-arrow.png')}}" alt="">
                                                         <span class="elementor-screen-only">Next</span>
                                                     </div>
                                                 </div>
@@ -811,11 +797,15 @@
                                             <div
                                                 class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
                                                 <div class="elementor-video"></div>
-                                                <div data-bg="https://www.btaskee.com/wp-content/uploads/2020/01/deep-cleaning-thai.png"
-                                                    class="elementor-custom-embed-image-overlay ">
+                                                <style>
+                                                    .bg {
+                                                        background-image: url('https://www.btaskee.com/wp-content/uploads/2020/01/deep-cleaning-thai.png');
+                                                    }
+                                                </style>
+                                                <div
+                                                    class="elementor-custom-embed-image-overlay bg">
                                                     <div class="elementor-custom-embed-play" role="button"
-                                                        aria-label="Chơi Video" tabindex="0"> <i
-                                                            aria-hidden="true" class="eicon-play"></i> <span
+                                                        aria-label="Chơi Video" tabindex="0"><img src="{{asset('/images/play.png')}}" alt=""> <span
                                                             class="elementor-screen-only">Chơi Video</span></div>
                                                 </div>
                                             </div>
@@ -1023,10 +1013,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">1.
                                                             Ứng dụng bTaskee đang được triển khai ở đâu?</a>
@@ -1056,10 +1044,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">2.
                                                             Mình muốn sử dụng thử dịch vụ của bTaskee nhưng phân vân
@@ -1084,10 +1070,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">3.
                                                             Khi đăng công việc lên ứng dụng thì phải mất bao lâu mới
@@ -1111,10 +1095,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">4.
                                                             Làm sao nhận dạng người giúp việc?</a>
@@ -1139,10 +1121,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">5.
                                                             Vào ngày Lễ, Tết, người giúp việc có đến dọn dẹp nhà
@@ -1167,10 +1147,8 @@
                                                         <span
                                                             class="elementor-accordion-icon elementor-accordion-icon-right"
                                                             aria-hidden="true">
-                                                            <span class="elementor-accordion-icon-closed"><i
-                                                                    class="fas fa-plus"></i></span>
-                                                            <span class="elementor-accordion-icon-opened"><i
-                                                                    class="fas fa-minus"></i></span>
+                                                            <span class="elementor-accordion-icon-closed"><img src="{{asset('/images/up-arrow.png')}}" alt=""></span>
+                                                            <span class="elementor-accordion-icon-opened"><img src="{{asset('/images/down.png')}}" alt=""></span>
                                                         </span>
                                                         <a class="elementor-accordion-title" href="">6.
                                                             Làm thể nào để sử dụng dịch vụ trên Ứng dụng một cách
@@ -1235,7 +1213,7 @@
                                                         Khi có bất kỳ thắc mắc gì về dịch vụ, bạn chỉ cần chạm nhẹ,
                                                         chúng tôi sẽ giải đáp cho bạn. <br> <br> <a
                                                             class="button-line"
-                                                            href="https://www.btaskee.com/lien-he/">Nhận hỗ
+                                                            href="/contact">Nhận hỗ
                                                             trợ</a></div>
                                                 </div>
                                             </div>

@@ -47,6 +47,7 @@
                         <div class="card" >
                             <div class="card-body">
                               <h5 class="card-title">{{$item->name}}</h5>
+                              <span><img src="{{Storage::url($item->image)}}" alt=""></span>
                               <p class="card-text">Số point: {{$item->point}} </p>
                               <p class="card-text">Discount: {{$item->number}}%</p>
                               <p class="card-text">Ngày hết hạn: {{$item->expried_at}}</p>
