@@ -29,6 +29,7 @@ class VoucherRequest extends FormRequest
             'number' => 'required|integer',
             'point' => 'required|integer',
             'expried_at' => 'required|string',
+            'image' => 'image|mimes:jpeg,png,jpg,gif',
         ];
     }
 }

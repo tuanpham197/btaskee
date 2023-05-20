@@ -95,7 +95,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 25px">
                         <div class="col-md-12">
                             <h5>Chọn phương thức thanh toán</h5>
                         </div>
@@ -118,13 +118,27 @@
                                     tiền mặt khi hoàn thành
                                 </label>
                             </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="3" type="radio" name="payment_method"
+                                    id="payment_method_3">
+                                <label class="form-check-label" for="payment_method_3">
+                                    <img src="{{ asset('images/vnpay-method.png') }}" width="40" alt=""> Thanh toán qua VNPay
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <h5>Chọn voucher</h5>
                     @foreach ($voucherUsers as $item)
                         <div class="form-group">
                             <input type="checkbox" id="voucher{{$item->id}}" value="{{$item->id}}" name="voucher" onchange="handleCheckboxChange(this)">
-                            <label for="voucher{{$item->id}}">{{$item->name}} ({{$item->number}}%)</label>
+                            <label for="voucher{{$item->id}}">
+                                @if ($item->image)
+                                    <img width="100" src="{{asset('images/'.$item->image)}}" alt="">
+                                @else
+                                    $item->name
+                                @endif
+
+                            </label>
                         </div>
                     @endforeach
 

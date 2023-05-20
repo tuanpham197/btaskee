@@ -79,7 +79,7 @@
                                 <select id="services" class="form-select form-select-md mb-3" aria-label=".form-select-md example" name="service_id">
                                     <option selected>--- Chọn dịch vụ ----</option>
                                     @foreach ($services as $service)
-                                        <option value="{{$service->id}}" {{old('service_id') == $service->id ? 'selected' : ''}}>{{$service->name}}</option>
+                                        <option value="{{$service->id}}" {{old('service_id') == $service->id ? 'selected' : ''}}>{{$service->name}}</option> 123
                                     @endforeach
                                 </select>
                             </div>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button type="submit" class="">Info</button>
+                                <button type="submit" class="">Tiếp theo</button>
                             </div>
                         </div>
                     </div>

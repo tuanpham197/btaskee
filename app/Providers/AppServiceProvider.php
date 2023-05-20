@@ -7,6 +7,7 @@ use App\Models\Service;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
@@ -29,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $currentUser = Auth::user();
         Paginator::useBootstrap();
         $services = Service::all();
         $userCount = User::count();

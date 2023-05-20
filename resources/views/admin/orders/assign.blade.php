@@ -57,9 +57,44 @@
                             </tr>
                         </tbody>
                     </table>
+                    @if (isset($order->worker))
+                        <h5>Thông tin người giúp việc</h5>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tên</th>
+                                    <th>Email</th>
+                                    <th>Số điện thoại</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{$order->worker->username}}</td>
+                                    <td>{{$order->worker->email}}</td>
+                                    <td>{{$order->worker->phone_number}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    @endif
                 </div>
-
+            </div>
+            <div class="container-fluid">
+               <div class="row">
+                <div class="col-md-6">
+                    <h5>Thông tin khách hàng</h5>
+                    <p>Tên: <strong>{{$order->user->username ?? ''}}</strong></p>
+                    <p>Email: <strong>{{$order->user->email ?? ''}}</strong></p>
+                    <p>Địa chỉ đặt hàng: <strong> {{sprintf('%s, %s, %s, %s', $order->address, $order->ward->name, $order->district->name, $order->province->name)}}</strong></p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Thông tin người giúp việc</h5>
+                    <p>Tên: <strong>{{$order->worker->username ?? ''}}</strong></p>
+                    <p>Email: <strong>{{$order->worker->email ?? ''}}</strong></p>
+                    {{-- <p>Địa chỉ: <strong> {{sprintf('%s, %s, %s, %s', $order->address, $order->ward->name, $order->district->name, $order->province->name)}}</strong></p> --}}
+                </div>
+               </div>
             </div>
         </div>
+
     </div>
 @endsection

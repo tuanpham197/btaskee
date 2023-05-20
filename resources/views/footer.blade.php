@@ -136,58 +136,6 @@ class="elementor elementor-830 elementor-location-footer">
                                                         data-id="47a3a8e" data-element_type="widget"
                                                         data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;}"
                                                         data-widget_type="nav-menu.default">
-                                                        <div class="elementor-widget-container">
-                                                            <nav migration_allowed="1" migrated="0"
-                                                                role="navigation"
-                                                                class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-                                                                <ul id="menu-1-47a3a8e"
-                                                                    class="elementor-nav-menu">
-                                                                    <li
-                                                                        class="country-footer-viet menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31292">
-                                                                        <a class="elementor-item">Việt Nam</a>
-                                                                        <ul
-                                                                            class="sub-menu elementor-nav-menu--dropdown">
-                                                                            <li
-                                                                                class="country-footer-thai menu-item menu-item-type-custom menu-item-object-custom menu-item-31293">
-                                                                                <a href="https://www.btaskee.com/th/"
-                                                                                    class="elementor-sub-item">Thailand</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </nav>
-                                                            <div class="elementor-menu-toggle"
-                                                                role="button" tabindex="0"
-                                                                aria-label="Menu Toggle"
-                                                                aria-expanded="false"> <i aria-hidden="true"
-                                                                    role="presentation"
-                                                                    class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i
-                                                                    aria-hidden="true" role="presentation"
-                                                                    class="elementor-menu-toggle__icon--close eicon-close"></i>
-                                                                <span
-                                                                    class="elementor-screen-only">Menu</span>
-                                                            </div>
-                                                            <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container"
-                                                                role="navigation" aria-hidden="true">
-                                                                <ul id="menu-2-47a3a8e"
-                                                                    class="elementor-nav-menu">
-                                                                    <li
-                                                                        class="country-footer-viet menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-31292">
-                                                                        <a class="elementor-item"
-                                                                            tabindex="-1">Việt Nam</a>
-                                                                        <ul
-                                                                            class="sub-menu elementor-nav-menu--dropdown">
-                                                                            <li
-                                                                                class="country-footer-thai menu-item menu-item-type-custom menu-item-object-custom menu-item-31293">
-                                                                                <a href="https://www.btaskee.com/th/"
-                                                                                    class="elementor-sub-item"
-                                                                                    tabindex="-1">Thailand</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </nav>
-                                                        </div>
                                                     </div>
                                                     <div class="elementor-element elementor-element-f4c1e77 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
                                                         data-id="f4c1e77" data-element_type="widget"
@@ -195,47 +143,10 @@ class="elementor elementor-830 elementor-location-footer">
                                                         <div class="elementor-widget-container">
                                                             <ul class="elementor-icon-list-items">
                                                                 <li class="elementor-icon-list-item"> <a
-                                                                        href="/lien-he/" target="_blank">
-                                                                        <span
-                                                                            class="elementor-icon-list-icon">
-                                                                            <i aria-hidden="true"
-                                                                                class="far fa-envelope"></i>
-                                                                        </span> <span
+                                                                        href="/contact" target="_blank">
+                                                                       <span
                                                                             class="elementor-icon-list-text">Liên
                                                                             hệ</span> </a> </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-81c49ef"
-                                            data-id="81c49ef" data-element_type="column">
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-da59895 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                                        data-id="da59895" data-element_type="widget"
-                                                        data-widget_type="icon-list.default">
-                                                        <div class="elementor-widget-container">
-                                                            <ul class="elementor-icon-list-items">
-                                                                <li class="elementor-icon-list-item"> <a
-                                                                        href="/cau-hoi-thuong-gap/"
-                                                                        target="_blank"> <span
-                                                                            class="elementor-icon-list-icon">
-                                                                            <i aria-hidden="true"
-                                                                                class="fas fa-headphones-alt"></i>
-                                                                        </span> <span
-                                                                            class="elementor-icon-list-text">Hỗ
-                                                                            trợ</span> </a> </li>
-                                                                <li class="elementor-icon-list-item"> <a
-                                                                        href="/giai-quyet-khieu-nai/"
-                                                                        target="_blank"> <span
-                                                                            class="elementor-icon-list-icon">
-                                                                            <i aria-hidden="true"
-                                                                                class="far fa-comment-alt"></i>
-                                                                        </span> <span
-                                                                            class="elementor-icon-list-text">Khiếu
-                                                                            nại</span> </a> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -278,125 +189,20 @@ class="elementor elementor-830 elementor-location-footer">
                                 data-widget_type="icon-list.default">
                                 <div class="elementor-widget-container">
                                     <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item"> <a href="/gioi-thieu/"
+                                        <li class="elementor-icon-list-item"> <a href="/about"
                                                 target="_blank"> <span class="elementor-icon-list-text">Giới
                                                     thiệu</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/brewards/"
+                                        <li class="elementor-icon-list-item"> <a href="/reward"
                                                 target="_blank"> <span
                                                     class="elementor-icon-list-text">bRewards</span> </a>
                                         </li>
-                                        <li class="elementor-icon-list-item"> <a href="/thanh-toan-bpay/"
-                                                target="_blank"> <span
-                                                    class="elementor-icon-list-text">bPay</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/tuyen-dung/"
-                                                target="_blank"> <span
-                                                    class="elementor-icon-list-text">Tuyển dụng</span> </a>
-                                        </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjMxOTczIiwidG9nZ2xlIjpmYWxzZX0%3D"
-                                                target="_blank" rel="nofollow"> <span
-                                                    class="elementor-icon-list-text">Chi nhánh</span> </a>
-                                        </li>
-                                        <li class="elementor-icon-list-item"> <a href="/kinh-nghiem-hay/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Kinh
-                                                    nghiệm hay</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/khuyen-mai/"
-                                                target="_blank"> <span
-                                                    class="elementor-icon-list-text">Khuyến mãi</span> </a>
-                                        </li>
-                                        <li class="elementor-icon-list-item"> <a href="/dieu-khoan-su-dung/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Điều
-                                                    khoản sử dụng</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/chinh-sach-bao-mat/"
-                                                target="_blank"> <span
-                                                    class="elementor-icon-list-text">Chính sách bảo mật</span>
-                                            </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="/cau-chuyen-nguoi-giup-viec/" target="_blank"> <span
-                                                    class="elementor-icon-list-text">Câu chuyện người giúp
-                                                    việc</span> </a> </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ab4df02"
-                    data-id="ab4df02" data-element_type="column">
-                    <div class="elementor-column-wrap elementor-element-populated">
-                        <div class="elementor-widget-wrap">
-                            <div class="elementor-element elementor-element-ddc92e3 elementor-widget elementor-widget-heading"
-                                data-id="ddc92e3" data-element_type="widget"
-                                data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <p class="elementor-heading-title elementor-size-default">Dịch vụ</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-b6e7eb8 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                data-id="b6e7eb8" data-element_type="widget"
-                                data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="/giup-viec-nha-theo-gio/" target="_blank"> <span
-                                                    class="elementor-icon-list-text">Giúp việc nhà theo
-                                                    giờ</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/di-cho/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Đi
-                                                    chợ</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/cham-soc-nguoi-benh/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Chăm
-                                                    sóc người bệnh</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/cham-soc-nguoi-cao-tuoi/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Chăm
-                                                    sóc người cao tuổi</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/tong-ve-sinh/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Tổng
-                                                    vệ sinh</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/ve-sinh-may-lanh/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Vệ
-                                                    sinh máy lạnh</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/nau-an-gia-dinh/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Nấu
-                                                    ăn gia đình</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/giat-ui/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Giặt
-                                                    ủi</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="/btaskee-cho-doanh-nghiep/" target="_blank"> <span
-                                                    class="elementor-icon-list-text">bTaskee cho doanh
-                                                    nghiệp</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="/don-dep-buong-phong/" target="_blank"> <span
-                                                    class="elementor-icon-list-text">Dọn dẹp buồng
-                                                    phòng</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a href="/khu-khuan/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Khử
-                                                    khuẩn</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/kinh-nghiem-hay/dich-vu-giat-ghe-sofa-tai-nha/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Giặt
-                                                    ghế sofa</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/kinh-nghiem-hay/dich-vu-giat-rem-cua-tai-nha-chuyen-nghiep-chat-luong/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Giặt
-                                                    rèm</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/kinh-nghiem-hay/dich-vu-giat-nem-tai-nha/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Giặt
-                                                    nệm</span> </a> </li>
-                                        <li class="elementor-icon-list-item"> <a
-                                                href="https://www.btaskee.com/kinh-nghiem-hay/dich-vu-giat-tham-chuyen-nghiep-btaskee/"
-                                                target="_blank"> <span class="elementor-icon-list-text">Giặt
-                                                    thảm</span> </a> </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -447,30 +253,17 @@ class="elementor elementor-830 elementor-location-footer">
                                                                         class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-9758c9c"
                                                                         href="https://www.facebook.com/btaskee"
                                                                         target="_blank" rel="nofollow">
-                                                                        <span
-                                                                            class="elementor-screen-only">Facebook-f</span>
-                                                                        <i class="fab fa-facebook-f"></i> </a>
+                                                                        <span><img src="{{asset('/images/facebook.png')}}" alt=""></span> </a>
                                                                 </span> <span class="elementor-grid-item"> <a
                                                                         class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-d550229"
                                                                         href="https://www.instagram.com/btaskee/"
                                                                         target="_blank" rel="nofollow">
-                                                                        <span
-                                                                            class="elementor-screen-only">Instagram</span>
-                                                                        <i class="fab fa-instagram"></i> </a>
+                                                                        <span><img src="{{asset('/images/instagram.png')}}" alt=""></span> </a>
                                                                 </span> <span class="elementor-grid-item"> <a
                                                                         class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-82b3bad"
                                                                         href="https://www.youtube.com/channel/UC55F4JRrI9ewVpoR6DOMfkQ"
                                                                         target="_blank" rel="nofollow">
-                                                                        <span
-                                                                            class="elementor-screen-only">Youtube</span>
-                                                                        <i class="fab fa-youtube"></i> </a>
-                                                                </span> <span class="elementor-grid-item"> <a
-                                                                        class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-b72bfac"
-                                                                        href="https://twitter.com/btaskee"
-                                                                        target="_blank" rel="nofollow">
-                                                                        <span
-                                                                            class="elementor-screen-only">Twitter</span>
-                                                                        <i class="fab fa-twitter"></i> </a>
+                                                                        <span><img src="{{asset('/images/youtube.png')}}" alt=""></span> </a>
                                                                 </span>
                                                             </div>
                                                         </div>

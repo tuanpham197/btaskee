@@ -139,7 +139,7 @@
                                                         Nẵng, Hội An, Nha Trang, Đà Lạt, Bình Dương, Biên Hòa,
                                                         TP.HCM và Cần Thơ. Ngoài ra, bTaskee đang mở rộng ra thị
                                                         trường nước ngoài với dịch vụ chính là <a
-                                                            href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
+                                                            href=""
                                                             style="color:#FF8226">giúp việc nhà theo giờ</a> tại
                                                         Thái Lan và Malaysia.</p>
                                                 </div>
@@ -225,7 +225,7 @@
                                                     <h2 class="elementor-image-box-title">Tầm nhìn</h2>
                                                     <p class="elementor-image-box-description">Không chỉ muốn giúp
                                                         bạn chăm sóc gia đình từ những dịch vụ <a
-                                                            href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
+                                                            href=""
                                                             style="color:#FF8226">dọn dẹp nhà</a>, <a
                                                             href="https://www.btaskee.com/ve-sinh-may-lanh/"
                                                             style="color:#FF8226">vệ sinh máy lạnh</a>, <a
@@ -628,7 +628,7 @@
                                                                             <p
                                                                                 class="elementor-image-box-description">
                                                                                 Cập nhật những thông tin mới nhất về
-                                                                                <a href="https://www.btaskee.com/giup-viec-nha-theo-gio/"
+                                                                                <a href=""
                                                                                     style="color:#FF8226">dịch vụ
                                                                                     giúp việc</a> và những chia sẻ
                                                                                 hữu ích về cuộc sống hàng ngày.
